@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/portfolio-ernandes-bitencourt/static/css/main.073c9b0a.css",
+    "main.js": "/portfolio-ernandes-bitencourt/static/js/main.6a60f0ae.js",
+    "static/js/787.955cd30a.chunk.js": "/portfolio-ernandes-bitencourt/static/js/787.955cd30a.chunk.js",
+    "static/media/logo.svg": "/portfolio-ernandes-bitencourt/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/portfolio-ernandes-bitencourt/index.html",
+    "main.073c9b0a.css.map": "/portfolio-ernandes-bitencourt/static/css/main.073c9b0a.css.map",
+    "main.6a60f0ae.js.map": "/portfolio-ernandes-bitencourt/static/js/main.6a60f0ae.js.map",
+    "787.955cd30a.chunk.js.map": "/portfolio-ernandes-bitencourt/static/js/787.955cd30a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.6a60f0ae.js"
+  ]
+}
