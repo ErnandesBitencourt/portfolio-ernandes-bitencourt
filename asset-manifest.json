@@ -1,16 +1,28 @@
 {
   "files": {
-    "main.css": "/portfolio-ernandes-bitencourt/static/css/main.073c9b0a.css",
-    "main.js": "/portfolio-ernandes-bitencourt/static/js/main.6a60f0ae.js",
+    "main.css": "/portfolio-ernandes-bitencourt/static/css/main.e6c13ad2.css",
+    "main.js": "/portfolio-ernandes-bitencourt/static/js/main.6afffd23.js",
     "static/js/787.955cd30a.chunk.js": "/portfolio-ernandes-bitencourt/static/js/787.955cd30a.chunk.js",
-    "static/media/logo.svg": "/portfolio-ernandes-bitencourt/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/LabEcommerce.PNG": "/portfolio-ernandes-bitencourt/static/media/LabEcommerce.f6c82d071a86c19bf0a7.PNG",
+    "static/media/Portfolio.PNG": "/portfolio-ernandes-bitencourt/static/media/Portfolio.4f7c302b815be26148bc.PNG",
+    "static/media/LogoLoadingPage2.gif": "/portfolio-ernandes-bitencourt/static/media/LogoLoadingPage2.b01c735fa804fdad2ae1.gif",
+    "static/media/Pokemons.PNG": "/portfolio-ernandes-bitencourt/static/media/Pokemons.53c8365bb1e6a7a06152.PNG",
+    "static/media/CurriculoErnandesBitencourt.pdf": "/portfolio-ernandes-bitencourt/static/media/CurriculoErnandesBitencourt.04ca1510398972fe2c72.pdf",
+    "static/media/GifLogo2.gif": "/portfolio-ernandes-bitencourt/static/media/GifLogo2.377f9f00d996aa60109f.gif",
+    "static/media/AvatarSobremim.png": "/portfolio-ernandes-bitencourt/static/media/AvatarSobremim.7aa44d601062d4225043.png",
+    "static/media/habilidade.png": "/portfolio-ernandes-bitencourt/static/media/habilidade.7c53e643f6d82c1546e3.png",
+    "static/media/react1.png": "/portfolio-ernandes-bitencourt/static/media/react1.d7cf3162febda4126485.png",
+    "static/media/styledComponents.png": "/portfolio-ernandes-bitencourt/static/media/styledComponents.fac9114fd8d5164d7b91.png",
+    "static/media/jester.png": "/portfolio-ernandes-bitencourt/static/media/jester.dfe83d78cb8d14457012.png",
+    "static/media/Labex.PNG": "/portfolio-ernandes-bitencourt/static/media/Labex.65dc68cf048072a51f41.PNG",
+    "static/media/ImgFooter.PNG": "/portfolio-ernandes-bitencourt/static/media/ImgFooter.fe0a7788432ac630ec40.PNG",
     "index.html": "/portfolio-ernandes-bitencourt/index.html",
-    "main.073c9b0a.css.map": "/portfolio-ernandes-bitencourt/static/css/main.073c9b0a.css.map",
-    "main.6a60f0ae.js.map": "/portfolio-ernandes-bitencourt/static/js/main.6a60f0ae.js.map",
+    "main.e6c13ad2.css.map": "/portfolio-ernandes-bitencourt/static/css/main.e6c13ad2.css.map",
+    "main.6afffd23.js.map": "/portfolio-ernandes-bitencourt/static/js/main.6afffd23.js.map",
     "787.955cd30a.chunk.js.map": "/portfolio-ernandes-bitencourt/static/js/787.955cd30a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.6a60f0ae.js"
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.6afffd23.js"
   ]
 }
