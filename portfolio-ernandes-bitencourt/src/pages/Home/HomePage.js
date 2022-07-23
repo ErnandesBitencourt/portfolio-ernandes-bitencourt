@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect,useState } from "react";
+import { Link } from "react-router-dom";
 import { ContainerGeral,ContianerButtomTop,ContainerHeader,ContainerNavHeader,ImgLogoHeader,UlNavHeader,TextIlSobreMim,ContainerGeralProjetos,ContainerGeralMainSobreMim,ContainerGeralSkill,ContainerGeralContatos,ContainerGeralFooter,ContainerImgLogoHeader,SubContainerGeral,ContainerGeralFormacao,ContainerGeralLoadingPage,HamburgeContaine1} from "./StyledHomePage";
 import { useRef } from "react";
 import {SobreMim} from "../SobreMim/SobreMim"
@@ -46,7 +47,7 @@ export  const HomePage = () => {
         window.scrollTo({ behavior: 'smooth', top: props.current.offsetTop })
     }   
 
-
+   const url="https://github.com/ErnandesBitencourt"
    
 
 
@@ -95,6 +96,7 @@ export  const HomePage = () => {
             </ContainerGeralSkill >             
             <ContainerGeralProjetos ref={projetos} id="projetos" >
                 <ProjetosTst />
+                <h1>Mais projetos no <a target="_blank" href="https://github.com/ErnandesBitencourt">  <code>Github</code></a></h1>
             </ContainerGeralProjetos>       
             <ContainerGeralContatos  ref={contatos} id="contatos"> 
                 <Contatos />

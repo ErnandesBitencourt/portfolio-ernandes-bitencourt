@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import linkedininicon from "../img/imgContatos/linkedininicon.png"
 import githubicon from "../img/imgContatos/githubicon.png"
 import LogoLoadingPage2 from "../img/imgLogos/LogoLoadingPage2.gif"
-import CurriculoErnandesBitencourt from "../../curriculo/CurriculoErnandesBitencourt.pdf"
+import curriculoErnandesBitencourt from "../../curriculo/curriculoErnandesBitencourt.pdf"
 
 export const linkStyle = {
         
@@ -29,7 +29,7 @@ export const LoadingPage = () => {
                             <NomeHello> Olá!</NomeHello>
                         </ContainerHello>
                         <ContainerIm>
-                            <TextIm> Me chamo </TextIm>
+                            <TextIm> eu sou  </TextIm>
                         </ContainerIm>
                         <ContainerName>
                             <NomeH3>Ernandes Bitencourt</NomeH3> 
@@ -47,7 +47,7 @@ export const LoadingPage = () => {
                         <ButtonEfect>  
                       
 
-                        <HoverButton> <Link style={linkStyle} to={CurriculoErnandesBitencourt} target="_blank" download>  Currículo  </Link></HoverButton>
+                        <HoverButton> <Link style={linkStyle} to={curriculoErnandesBitencourt} target="_blank" download>  Currículo  </Link></HoverButton>
                         </ButtonEfect>
                     </ContainerButon>
 

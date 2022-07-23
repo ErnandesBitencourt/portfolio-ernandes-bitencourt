@@ -2,7 +2,7 @@ import React from "react";
 import {TextSobreMimDiv, ContainerMainSobreMim,ContainerDivSobreMim , TextHSobreMim, ContainerDivTextPSobreMin,TextP,StrongP,ContainerButtonDwCv,ContainerDivImgSobreMin,ImgSobreMin,ButtonDwCvA } from "./StyledSobreMim"
 import AvatarSobremim from "../img/imgSobreMim/AvatarSobremim.png"
 import { Link } from "react-router-dom";
-import CurriculoErnandesBitencourt from "../../curriculo/CurriculoErnandesBitencourt.pdf"
+import curriculoErnandesBitencourt from "../../curriculo/curriculoErnandesBitencourt.pdf"
 import {linkStyle} from "../loadingPage/LoadingPage"
 
 
@@ -29,7 +29,7 @@ export const SobreMim = () => {
                     <TextSobreMimDiv>
                         <TextP >
                             Olá, me chamo <StrongP>Ernandes Bitencourt.</StrongP><br/>
-                            Sou desenvolvedor em formação no bootcamp Labenu web full-stack,onde realizo projetos práticos, individuais e em grupos, já domino o HTML5, CSS3, Javascript, React.JS, React hooks, Typescript, Styled-component, Git ,Node.JS, sou curioso,gosto de novos desafios e de sempre está me atualizando.
+                            Sou desenvolvedor em formação no bootcamp Labenu web full-stack,onde realizo projetos práticos, individuais e em grupos, já domino o HTML5, CSS3, Javascript, React.JS, React hooks, Typescript, Styled-component, Git ,Node.JS e mysql workbench, sou curioso,gosto de novos desafios e de sempre aprender coisas novas e também sempre está me atualizando.
                         </TextP>
                     </TextSobreMimDiv>
                        
@@ -37,7 +37,7 @@ export const SobreMim = () => {
                 </ContainerDivTextPSobreMin>
 
                 <ContainerButtonDwCv  >
-                  <ButtonDwCvA> <Link style={linkStyle} to={CurriculoErnandesBitencourt} target="_blank" download>  Currículo  </Link> </ButtonDwCvA>
+                  <ButtonDwCvA> <Link style={linkStyle} to={curriculoErnandesBitencourt} target="_blank" download>  Currículo  </Link> </ButtonDwCvA>
                         
                 </ContainerButtonDwCv>
             

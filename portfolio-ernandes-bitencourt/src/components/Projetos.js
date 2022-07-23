@@ -36,7 +36,7 @@ export const projetosRealizados = [{
         foto:Portfolio,
         detalhes:" Desenvolvido em react ,foi utilizado hooks e styled-components mais detalhes no github. (está responsivo)",
         gitHub:"https://github.com/ErnandesBitencourt/portifolio",
-        linkSite:"Não finalizado"
+        linkSite:"https://ernandesbitencourt.github.io/portfolio-ernandes-bitencourt/"
 
     }
  
