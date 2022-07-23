@@ -111,7 +111,7 @@ export const ImgCarrocel = styled.img`
 
     @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
     /* celulares */
-    width: 80%;
+    width: 95%;
     };
     @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
         /* tablets */
