@@ -1,7 +1,6 @@
 import React from "react";
 import { useEffect,useState } from "react";
-import { Link } from "react-router-dom";
-import { ContainerGeral,ContianerButtomTop,ContainerHeader,ContainerNavHeader,ImgLogoHeader,UlNavHeader,TextIlSobreMim,ContainerGeralProjetos,ContainerGeralMainSobreMim,ContainerGeralSkill,ContainerGeralContatos,ContainerGeralFooter,ContainerImgLogoHeader,SubContainerGeral,ContainerGeralFormacao,ContainerGeralLoadingPage,HamburgeContaine1} from "./StyledHomePage";
+import { ContainerGeral,Img,ContianerButtomTop,ContainerHeader,ContainerNavHeader,ImgLogoHeader,UlNavHeader,TextIlSobreMim,ContainerGeralProjetos,ContainerGeralMainSobreMim,ContainerGeralSkill,ContainerGeralContatos,ContainerGeralFooter,ContainerImgLogoHeader,SubContainerGeral,ContainerGeralFormacao,ContainerGeralLoadingPage,HamburgeContaine1} from "./StyledHomePage";
 import { useRef } from "react";
 import {SobreMim} from "../SobreMim/SobreMim"
 import {HabilidadesTst1} from "../Habilidades/HabilidadesTst"
@@ -12,6 +11,7 @@ import iconPraCima from "../img/imgLogos/iconPraCima.png"
 import {LoadingPage} from "../loadingPage/LoadingPage"
 import TelaDecarregamento from "../loadingPage/TelaDecarregamento"
 import LogoHeader1 from "../img/imgLogos/LogoHeader1.png"
+import githubicon from "../img/imgContatos/githubicon.png"
 
 
 export  const HomePage = () => {
@@ -96,7 +96,7 @@ export  const HomePage = () => {
             </ContainerGeralSkill >             
             <ContainerGeralProjetos ref={projetos} id="projetos" >
                 <ProjetosTst />
-                <h1>Mais projetos no <a target="_blank" href="https://github.com/ErnandesBitencourt">  <code>Github</code></a></h1>
+                <a target="_blank" href="https://github.com/ErnandesBitencourt">  <Img src={githubicon}/></a>
             </ContainerGeralProjetos>       
             <ContainerGeralContatos  ref={contatos} id="contatos"> 
                 <Contatos />

@@ -479,50 +479,30 @@ export  const  ContainerGeralProjetos = styled.div`
         padding: 15vh 0 6vh 0 ;
        
     };
-   h1{
-    color: #909090;
-    background: none;
-    font-size: 1.5rem;
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    /* celulares */
-    font-size: 1rem;
-        
-    };
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-        /* tablets */
-        font-size: 1.4rem;
-    };
-    a{
-        text-decoration:none;
-        
-        code{
-           background-color:#0b0a17 ;
-           font-size: 1.7rem;
-           color: #380060;
-           @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-            /* celulares */
-            font-size: 1.4rem;
-
-            :active{
-                border-bottom: solid 1px #909090;
-            }
-                
-            };
-        @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-            /* tablets */
-            font-size: 1.6rem;
-            :active{
-                border-bottom: solid 1px #909090;
-            }
-    };
-            
-           :hover{
-            border-bottom: solid 1px #909090;
-           }
-        }
-    }
+   a{   
+        width: 100px;
+        height: auto;
+        background:none;
+        text-decoration: none;
+        text-align: center;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #380060;
+        :hover{
+        border-bottom: solid 1px #909090 ;
+         }
    }
 
+`
+export const Img = styled.img`
+    background:none;
+    width: 50%;
+    height: auto;
+    :hover{
+        border: none;
+        border-radius: 50%;
+        background-color:#909090;
+     }
+    
 `
 
 
