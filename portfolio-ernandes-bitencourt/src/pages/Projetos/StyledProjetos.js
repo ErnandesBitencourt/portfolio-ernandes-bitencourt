@@ -148,6 +148,9 @@ export const DivNomeProjeto = styled.div`
     background: none;
     a{
         text-decoration:none;
+        width: auto;
+        text-align: left;
+       
         
     }
     
@@ -155,11 +158,12 @@ export const DivNomeProjeto = styled.div`
    
 `
 export const TextNomeProjeto = styled.h1`
-    font-size: 1.3rem;
+     font-size: 1.3rem;
      color:  #e5e5e5;
      font-weight: 700;
      background-color:#0b0a17;
      margin-left: 4px;
+     border: none;
     
      :hover{
         border-bottom: solid 1px #e5e5e5;
@@ -199,7 +203,6 @@ export const DivImgProjeto = styled.div`
 
 export const DivTextDetalhesProjeto = styled.div`
     width: 100%;
-   
     display: flex;
     justify-content: center;
     align-items: center;

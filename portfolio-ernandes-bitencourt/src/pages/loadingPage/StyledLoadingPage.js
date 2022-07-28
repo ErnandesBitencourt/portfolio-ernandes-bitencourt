@@ -95,7 +95,7 @@ export const ContainerLogo2 = styled.div`
 
 export const ContainerImgLogo = styled.div`
 
-    width: 75%;
+    width: 72%;
     height: 80%;
     display: flex;
     align-items: center;
@@ -441,6 +441,11 @@ export const IconGmail = styled.img`
     width:  50px;
     height: 50px;
     border-radius: 50%;
+    :hover{
+        border: none;
+        border-radius: 50%;
+        background-color:#e5e5e5;
+     }
 
     @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
     /* celulares */
@@ -459,6 +464,11 @@ export const IconLinkidin = styled.img`
     width:  50px;
     height: 50px;
     border-radius: 50%;
+    :hover{
+        border: none;
+        border-radius: 50%;
+        background-color:#e5e5e5;
+     }
     @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
     /* celulares */
     width:  40px;
@@ -474,6 +484,11 @@ export const IconGitHub = styled.img`
     width:  50px;
     height: 50px;
     border-radius: 50%;
+    :hover{
+        border: none;
+        border-radius: 50%;
+        background-color:#e5e5e5;
+     }
 
     @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
     /* celulares */

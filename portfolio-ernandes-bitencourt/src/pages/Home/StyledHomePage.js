@@ -49,7 +49,7 @@ export const ContainerNavHeader = styled.nav`
 export const ContainerImgLogoHeader = styled.div`
     display: flex;
     justify-content: center;
-    width: 6vw;
+    width: 4vw;
     height: 100%;
     cursor: pointer;
     border-bottom: solid 1px #380060;
@@ -488,7 +488,7 @@ export  const  ContainerGeralProjetos = styled.div`
         padding-bottom: 5px;
         border-bottom: 1px solid #380060;
         :hover{
-        border-bottom: solid 1px #909090 ;
+        border-bottom: solid 1px #e5e5e5 ;
          }
    }
 
@@ -500,7 +500,7 @@ export const Img = styled.img`
     :hover{
         border: none;
         border-radius: 50%;
-        background-color:#909090;
+        background-color:#e5e5e5;
      }
     
 `
