@@ -75,7 +75,7 @@ export const ContainerSegundarios = styled.div`
 
 export const ContainerLogo2 = styled.div`
     width: 50%;
-    height: 75%;
+    height: 65%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,7 +96,7 @@ export const ContainerLogo2 = styled.div`
 export const ContainerImgLogo = styled.div`
 
     width: 72%;
-    height: 80%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -116,7 +116,6 @@ export const ContainerHeader = styled.header`
     align-items: center;
     width: 100%;
     height:45%;
-    
 
 `
 
@@ -131,9 +130,6 @@ export const ContainerButon = styled.main`
     Link{
         background-color: white;
     }
-   
- 
-
 
 `
 export const ButtonEfect = styled.div`

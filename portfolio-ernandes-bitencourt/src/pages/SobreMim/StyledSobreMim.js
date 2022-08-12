@@ -151,9 +151,15 @@ export const ContainerButtonDwCv = styled.div`
 `
 export const ContainerDivImgSobreMin = styled.div`
 
-     width: 250px;
-    height: 28vh;
+     width: 25%;
+    height: 85%;
     background-color:  #0b0a17; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
     @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
     /* celulares */
         display: none;
@@ -167,7 +173,7 @@ export const ContainerDivImgSobreMin = styled.div`
 
 `
 export const ImgSobreMin = styled.img`
-     width: 100%;
+     width: 95%;
     height: 100%;
     background-color:  #0b0a17; 
 `

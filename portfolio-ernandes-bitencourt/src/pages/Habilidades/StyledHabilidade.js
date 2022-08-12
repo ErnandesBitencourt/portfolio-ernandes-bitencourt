@@ -191,7 +191,10 @@ export const Cards = styled.div`
     32.6px 55.7px 56.3px rgba(0, 0, 0, 0.156),
     58px 99px 100px rgba(0, 0, 0, 0.19);
     flex: 1 1 170px;
-    
+    img{
+        width: 65%;
+        height: 65%;
+    }
 
     :hover{
         border: solid 3px #380060;

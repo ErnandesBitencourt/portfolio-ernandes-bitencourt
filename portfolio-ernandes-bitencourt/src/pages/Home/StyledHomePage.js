@@ -21,7 +21,7 @@ export const ContainerGeral = styled.div`
 export const ContainerHeader = styled.header`
     
     width: 100%;
-    height:8vh;
+    height:9.5%;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #080713;
@@ -31,6 +31,8 @@ export const ContainerHeader = styled.header`
     position: fixed;
     top: 0;
     z-index: 4;
+
+    
 
         
 `
@@ -97,9 +99,9 @@ export const ImgLogoHeader = styled.img`
 `
 export const UlNavHeader = styled.ul`
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    width: 70%;
+    width: 67%;
     height:100%;
     border-bottom: solid 1px #380060;
     background-color: #080713;
@@ -164,7 +166,6 @@ export const TextIlSobreMim = styled.li`
     padding-bottom: 10px;
     padding-top: 10px;
     border-radius:10px;
-    border-bottom: 4px solid #380060;
     background-image: linear-gradient(#380060,#380060);
     background-repeat: no-repeat;
     background-size: 0 100%;
@@ -379,7 +380,7 @@ export  const  ContainerGeralMainSobreMim = styled.div`
 //------------------------Butto voltar ao topo -----------------------//
 
 export const ContianerButtomTop = styled.div`
-
+    display: ${props => props.butoonTopOf ? 'block' : 'none' };
     position: fixed;
     bottom: 50px;
     right:20px;
@@ -387,11 +388,17 @@ export const ContianerButtomTop = styled.div`
     cursor: pointer;
     width: 3vw;
     height: 6vh;
+    
     img {
         width: 3vw;
         height: 6vh;
         background: none;
+
+        :hover{
+           zoom: 1.1;
+        }
     }
+ 
     @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
     /* celulares */
         position: fixed;

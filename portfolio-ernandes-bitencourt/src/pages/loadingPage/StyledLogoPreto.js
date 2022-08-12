@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -37,8 +37,8 @@ export const Container = styled.div`
 
 export const LogoPretoImg = styled.img`
 
-    width: 20vw;
-    height: 25vh;
+    width: 20%;
+    height: 25%;
 
     @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
     /* celulares */

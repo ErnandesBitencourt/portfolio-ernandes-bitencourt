@@ -17,13 +17,28 @@ import githubicon from "../img/imgContatos/githubicon.png"
 export  const HomePage = () => {
     const [loading , setLoading] = useState(false)
     const [ativadoRes, setAtivadoRes] = useState(false)
+    const [butoonTopOf,setButoonTopOf ]= useState(false)
 
     useEffect(()=>{
         setLoading(true)
         setTimeout(() => {
             setLoading(false)
         },3000 )
+       
     },[])
+
+    useEffect(()=>{
+        
+        const butoonTopOf1 = () =>{
+            window.scrollY > 70 ? setButoonTopOf(true) : setButoonTopOf(false)
+        }
+        window.addEventListener("scroll",butoonTopOf1);
+
+        // return () =>{
+        //     window.removeEventListener("scroll",butoonTopOf1)
+        // }
+    },[])
+
     
     const hamburgeMenu = ()=>{
         setAtivadoRes(!ativadoRes)
@@ -43,6 +58,7 @@ export  const HomePage = () => {
     const contatos = useRef()
     const formacao= useRef()
     const sobreMim = useRef()
+
     const executeScrollSections = (props) => {
         window.scrollTo({ behavior: 'smooth', top: props.current.offsetTop })
     }   
@@ -81,7 +97,7 @@ export  const HomePage = () => {
                     </HamburgeContaine1>
                 </ContainerNavHeader>
             </ContainerHeader> 
-            <ContianerButtomTop onClick={()=>scrollTop()}>
+            <ContianerButtomTop  butoonTopOf={butoonTopOf} onClick={()=>scrollTop()}>
                 <img src={iconPraCima} alt="Foto de voltar ao top" />
             </ContianerButtomTop>
              <ContainerGeralLoadingPage>

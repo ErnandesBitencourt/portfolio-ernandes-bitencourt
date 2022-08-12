@@ -150,7 +150,7 @@ export const DivNomeProjeto = styled.div`
         text-decoration:none;
         width: auto;
         text-align: left;
-       
+  
         
     }
     
@@ -165,9 +165,7 @@ export const TextNomeProjeto = styled.h1`
      margin-left: 4px;
      border: none;
     
-     :hover{
-        border-bottom: solid 1px #e5e5e5;
-     }
+   
      @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
     /* celulares */
         font-size: 1rem;
