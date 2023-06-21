@@ -1,10 +1,10 @@
 import React from "react";
 import {ContainerSegundarios,ContainerGeralLog ,ImgLogo,ContainerImgLogo, Container,ContainerName,NomeH3,NomeHello,ContainerHello,Textp, IconGmail,IconLinkidin,IconGitHub,ContainerHeader,ContaineFooter,ContainerButon,HoverButton,ALinkding ,AGmail,FooterAnimetion,ContainerIm,TextIm,ContainerTextp,ButtonEfect,ContainerLogo2} from "./StyledLoadingPage"
 import { Link } from "react-router-dom";
-import linkedininicon from "../img/imgContatos/linkedininicon.png"
-import githubicon from "../img/imgContatos/githubicon.png"
-import LogoLoadingPage2 from "../img/imgLogos/LogoLoadingPage2.gif"
-import curriculoErnandesBitencourt from "../../curriculo/curriculoErnandesBitencourt.pdf"
+import linkedininicon from "../../img/imgContatos/linkedininicon.png"
+import githubicon from "../../img/imgContatos/githubicon.png"
+import LogoLoadingPage2 from "../../img/imgLogos/LogoLoadingPage2.gif"
+// import curriculoErnandesBitencourt from "../../curriculo/curriculoErnandesBitencourt.pdf"
 
 export const linkStyle = {
         
@@ -47,7 +47,7 @@ export const LoadingPage = () => {
                         <ButtonEfect>  
                       
 
-                        <HoverButton> <Link style={linkStyle} to={curriculoErnandesBitencourt} target="_blank" download>  Currículo  </Link></HoverButton>
+                        {/* <HoverButton> <Link style={linkStyle} to={curriculoErnandesBitencourt} target="_blank" download>  Currículo  </Link></HoverButton> */}
                         </ButtonEfect>
                     </ContainerButon>
 

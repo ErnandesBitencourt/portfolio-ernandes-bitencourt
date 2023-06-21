@@ -1,8 +1,10 @@
 
-import Labex from "../pages/img/imgProjetos/Labex.PNG"
-import Pokemons from "../pages/img/imgProjetos/Pokemons.PNG"
-import Portfolio from "../pages/img/imgProjetos/Portfolio.PNG"
-import LabEcommerce from "../pages/img/imgProjetos/LabEcommerce.PNG"
+// import Labex from "../../img/imgProjetos/Labex.PNG"
+import Labex from "../img/imgProjetos/Labex.png"
+
+import Pokemons from "../img/imgProjetos/pokemon.jpeg"
+import Portfolio from "../img/imgProjetos/Portfolio.png"
+import LabEcommerce from "../img/imgProjetos/LabEcommerce.png"
 
 
 

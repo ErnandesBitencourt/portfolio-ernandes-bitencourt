@@ -1,7 +1,7 @@
 import React from "react";
-import {frontende1} from "../../components/Skills"
+import {frontende1} from "../../endpoints/Skills"
 import {ContainerMainSkill,ContainerDivSkill,TextHSkill,ContainerGeralFrontEnd,ContainerDivH3TextFront,ContainerDivImgHabilidades,ImgHabilidades,ContainerCards,ContainerDivCard,ContainerDivCard2,Cards,TextCardsP } from "./StyledHabilidade"
-import habilidade from "../img/imgFrontend/habilidade.png"
+import habilidade from "../../img/imgFrontend/habilidade.png"
 
 
 export const HabilidadesTst1 = () => {

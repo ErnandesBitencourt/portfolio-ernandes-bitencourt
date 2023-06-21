@@ -1,7 +1,7 @@
 import React from "react";
 
 import {Container,LogoPretoImg} from "./StyledLogoPreto"
-import GifLogo2 from "../img/imgLogos/GifLogo2.gif"
+import GifLogo2 from "../../img/imgLogos/GifLogo2.gif"
 
  const TelaDecarregamento = () => {
 

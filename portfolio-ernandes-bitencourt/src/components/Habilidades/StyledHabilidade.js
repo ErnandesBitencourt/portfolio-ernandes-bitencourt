@@ -10,7 +10,7 @@ export  const  ContainerMainSkill = styled.main`
     width: 1000px;
     height: 100%;
     row-gap: 20px;
-    background-color:  #080713;
+   
     
     @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
     /* celulares */

@@ -1,25 +1,25 @@
 import React from "react";
 import { useState } from "react";
-import  {projetosRealizados} from "../../components/Projetos"
+import  {projetosRealizados} from "../../endpoints/Projetos"
 import {ContainerMainProjetos,ContainerDivH3Projetos,TextH3Projetos,Cards, ContainerCardsProjetos, ImgCarrocel,ContianerProjetos, DivNomeProjeto,TextNomeProjeto,DivImgProjeto,DivTextDetalhesProjeto,DivTextGitHubProjeto,TextDetalheProjeto,ImgGitHub} from "./StyledProjetos"
-import githubicon from "../img/imgContatos/githubicon.png"
-import botaoProximo from "../img/ImgIconsVoltarEProximo/botaoProximo.png"
-import botaoVoltar from "../img/ImgIconsVoltarEProximo/botaoVoltar.png"
+import githubicon from "../../img/imgContatos/githubicon.png"
+// import botaoProximo from "../../img/ImgIconsVoltarEProximo/botaoProximo.png"
+// import botaoVoltar from "../../img/ImgIconsVoltarEProximo/botaoVoltar.png"
 
 
  const ProjetosTst = () => {
 
 
-const [iProjeto, setIProjeto] = useState(0)
+// const [iProjeto, setIProjeto] = useState(0)
 
 
-const voltar = () =>{
-  return  iProjeto > 0 && setIProjeto(iProjeto-1)
-}
+// const voltar = () =>{
+//   return  iProjeto > 0 && setIProjeto(iProjeto-1)
+// }
 
-const proximo = () =>{
-   return iProjeto < projetosRealizados.length -1 && setIProjeto(iProjeto + 1)
-}
+// const proximo = () =>{
+//    return iProjeto < projetosRealizados.length -1 && setIProjeto(iProjeto + 1)
+// }
 
 
 

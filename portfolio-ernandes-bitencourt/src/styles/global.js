@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
 *{
-  background-color: #080713;
+ 
     margin: 0;
     padding: 0;
     ::-webkit-scrollbar{

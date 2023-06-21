@@ -9,7 +9,7 @@ export const Container = styled.div`
     align-items: center;
 
   
-    background-color: #080713;
+
 
     
 	-webkit-animation: fade-out 2s ease-out 1s both;

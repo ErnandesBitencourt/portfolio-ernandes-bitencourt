@@ -1,43 +1,6 @@
 import styled from "styled-components"
 
 
-export const ContainerGeral = styled.div`
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width:100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #080713;
-    overflow: hidden;
-    
-
-
-`
-
-
-
-//----------------------Container Header -------------------------------//
-
-export const ContainerHeader = styled.header`
-    
-    width: 100%;
-    height:9.5%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #080713;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    z-index: 4;
-
-    
-
-        
-`
-
-
 export const ContainerNavHeader = styled.nav`
     width: 90%;
     max-width:1150px;
@@ -45,7 +8,7 @@ export const ContainerNavHeader = styled.nav`
     display: flex;
     justify-content:space-between;
     align-items: center; 
-    background-color: #080713;
+   
     
 `
 export const ContainerImgLogoHeader = styled.div`
@@ -56,7 +19,7 @@ export const ContainerImgLogoHeader = styled.div`
     cursor: pointer;
     border-bottom: solid 1px #380060;
     margin-top: 7px;
-    background-color: #080713;
+    
     padding-bottom: 6px;
 
     @media screen and (min-device-width : 481px) and (max-device-width : 999px) { 
@@ -81,7 +44,7 @@ export const ImgLogoHeader = styled.img`
     width: 100%;
     height: 90%;
     cursor: pointer;
-    background-color: #080713;
+    
     @media screen and (min-device-width : 481px) and (max-device-width : 999px) { 
 
         height: 100%;
@@ -104,7 +67,7 @@ export const UlNavHeader = styled.ul`
     width: 67%;
     height:100%;
     border-bottom: solid 1px #380060;
-    background-color: #080713;
+    
     span{
         background:none;
     }
@@ -329,271 +292,3 @@ export const HamburgeContaine1 = styled.div`
 
 
 `
-
-
-
-//----------------------------Container LoadingPage-------------------//
-
- export const ContainerGeralLoadingPage = styled.div`
-
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: 100% ;
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:  #080713;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
- `
-
-
-//----------------------Container Sobre mim -------------------------------//
-
-
-export  const  ContainerGeralMainSobreMim = styled.div`
-    padding-top: 15vh;
-    padding-bottom: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 50vh;
-    margin-top:10vh;
-     background-color: #0b0a17;
-
-     @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    /* celulares */
-     padding: 12vh 0 6vh 0;
-        
-    };
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-        /* tablets */
-        padding: 15vh 0 6vh 0 ;
-       
-    };
-   
- 
-`
-
-
-//------------------------Butto voltar ao topo -----------------------//
-
-export const ContianerButtomTop = styled.div`
-    display: ${props => props.butoonTopOf ? 'block' : 'none' };
-    position: fixed;
-    bottom: 50px;
-    right:20px;
-    background: none;
-    cursor: pointer;
-    width: 3vw;
-    height: 6vh;
-    
-    img {
-        width: 3vw;
-        height: 6vh;
-        background: none;
-
-        :hover{
-           zoom: 1.1;
-        }
-    }
- 
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    /* celulares */
-        position: fixed;
-        bottom: 50px;
-        right:10px;
-        background: none;
-   
-        cursor: pointer;
-        width: 5vw;
-        height: 5vh;
-        img {
-            width:100%;
-            height: 100%;
-            background: none;
-        }
-    };
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-        /* tablets */
-        position: fixed;
-        bottom: 50px;
-        right:20px;
-        background: none;
-   
-        cursor: pointer;
-        width: 4vw;
-        height: 6vh;
-        img {
-            width:100%;
-            height: 100%;
-            background: none;
-        }
-    };
-`
-
-
-//----------------------Container Habilidades -------------------------------//
-
-
-export  const  ContainerGeralSkill = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 60vh;
-    padding-top: 15vh;
-    padding-bottom: 5vh;
-    background-color:  #080713;
-
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    /* celulares */
-     padding: 12vh 0 4vh 0;
-        height: auto;
-    };
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-        /* tablets */
-        padding: 15vh 0 6vh 0 ;
-        height: auto;
-    };
-   
-`
-
-
-
-
-
-//----------------------Container Projetos -------------------------------//
-
-export  const  ContainerGeralProjetos = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-   background-color: #0b0a17;
-    width: 100%;
-    
-    padding-top: 15vh;
-    padding-bottom:10vh;
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    /* celulares */
-     padding: 12vh 0 4vh 0;
-        
-    };
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-        /* tablets */
-        padding: 15vh 0 6vh 0 ;
-       
-    };
-   a{   
-        width: 100px;
-        height: auto;
-        background:none;
-        text-decoration: none;
-        text-align: center;
-        padding-bottom: 5px;
-        border-bottom: 1px solid #380060;
-        :hover{
-        border-bottom: solid 1px #e5e5e5 ;
-         }
-   }
-
-`
-export const Img = styled.img`
-    background:none;
-    width: 50%;
-    height: auto;
-    :hover{
-        border: none;
-        border-radius: 50%;
-        background-color:#e5e5e5;
-     }
-    
-`
-
-
-
-
-//----------------------Container Contatos-------------------------------//
-
-
-export  const  ContainerGeralContatos = styled.div`
-    padding-top: 13vh;
-    padding-bottom: 5vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 65vh;
-    background-color:  #080713;
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    /* celulares */
-     padding: 12vh 0 0 0;
-        
-    };
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-        /* tablets */
-        padding: 15vh 0 2vh 0 ;
-       
-    };
-   
-    
-`
-
-
-
-//---------------------------Formação---------------------------------//
-
-
-
-export  const  ContainerGeralFormacao = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    width: 100%;
-    height: 60vh;
-    padding-top: 10vh;
-    padding-bottom: 5vh;
-
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    /* celulares */
-     padding: 10vh 0 0 0;
-        
-    };
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-        /* tablets */
-        padding: 15vh 0 0 0 ;
-       
-    };
-   
-   
-`
-
-//----------------------Container Footer -------------------------------//
-
-
-export  const  ContainerGeralFooter = styled.footer`
-    
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    /* celulares */
-     padding: 5vh 0 0 0;
-        
-    };
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-        /* tablets */
-        padding: 8vh 0 6vh 0 ;
-       
-    };
-   
-    
-    
-`
-
-

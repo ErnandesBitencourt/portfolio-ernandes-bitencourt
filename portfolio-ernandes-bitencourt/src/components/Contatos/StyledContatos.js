@@ -7,7 +7,7 @@ export const ContainerMainContatos = styled.main`
     justify-content:space-around;
     width: 1000px;
     height: 100%;
-    background-color:  #080713;
+   
     
     
 
@@ -151,7 +151,7 @@ export const DivAssunto = styled.div`
     border-radius: 20px;
     width: 25%;
     height: 10%;
-    background-color: #080713;
+    
     position: relative;
     top: 3px;
     left: 5px;
@@ -171,7 +171,7 @@ export const DivAssunto2 = styled.div`
     justify-content: center;
     width: 27%;
     height: 10%;
-    background-color: #080713;
+    
     border-radius: 20px;
     position: relative;
     top: 5px;

@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const ContainerGeralLog = styled.div`
     margin-top: 150px;
     font-family: monospace;
-    background-color: #080713;
+    background-color: rgb(2 44 34);
     width: 1150px;
     height: 100%;
     display: flex;
@@ -34,6 +34,7 @@ export const Container = styled.div`
     height: 100%;
     border-radius: 5px;
     white-space: nowrap;
+    background-color: rgb(2 44 34);
 
     @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
     /* celulares */
@@ -59,6 +60,7 @@ export const ContainerSegundarios = styled.div`
     height: 95%;
     border-radius: 5px;
     white-space: nowrap;
+    background-color: rgb(2 44 34);
 
     @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
     /* celulares */
@@ -79,7 +81,7 @@ export const ContainerLogo2 = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #080713;
+    background-color: rgb(2 44 34);
     border-radius: 10px;
     @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
         /* celulares */

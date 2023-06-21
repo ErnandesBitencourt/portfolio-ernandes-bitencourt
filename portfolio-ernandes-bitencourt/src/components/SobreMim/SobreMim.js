@@ -1,9 +1,9 @@
 import React from "react";
 import {TextSobreMimDiv, ContainerMainSobreMim,ContainerDivSobreMim , TextHSobreMim, ContainerDivTextPSobreMin,TextP,StrongP,ContainerButtonDwCv,ContainerDivImgSobreMin,ImgSobreMin,ButtonDwCvA } from "./StyledSobreMim"
-import AvatarSobremim from "../img/imgSobreMim/AvatarSobremim.png"
-import { Link } from "react-router-dom";
-import curriculoErnandesBitencourt from "../../curriculo/curriculoErnandesBitencourt.pdf"
-import {linkStyle} from "../loadingPage/LoadingPage"
+import AvatarSobremim from "../../img/imgSobreMim/AvatarSobremim.png"
+// import { Link } from "react-router-dom";
+// import {curriculoErnandesBitencourt} from "../../curriculo/curriculoErnandesBitencourt.pdf"
+// import {linkStyle} from "../loadingPage/LoadingPage"
 
 
 
@@ -37,7 +37,7 @@ export const SobreMim = () => {
                 </ContainerDivTextPSobreMin>
 
                 <ContainerButtonDwCv  >
-                  <ButtonDwCvA> <Link style={linkStyle} to={curriculoErnandesBitencourt} target="_blank" download>  Currículo  </Link> </ButtonDwCvA>
+                  {/* <ButtonDwCvA> <Link style={linkStyle} to={curriculoErnandesBitencourt} target="_blank" download>  Currículo  </Link> </ButtonDwCvA> */}
                         
                 </ContainerButtonDwCv>
             

@@ -10,7 +10,7 @@ export  const  ContainerMainSobreMim = styled.main`
     align-items: center;
     width: 1000px;
     height: 100%;
-    background-color:  #0b0a17; 
+   
     
     @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
     /* celulares */
@@ -153,7 +153,7 @@ export const ContainerDivImgSobreMin = styled.div`
 
      width: 25%;
     height: 85%;
-    background-color:  #0b0a17; 
+   
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -175,7 +175,7 @@ export const ContainerDivImgSobreMin = styled.div`
 export const ImgSobreMin = styled.img`
      width: 95%;
     height: 100%;
-    background-color:  #0b0a17; 
+   
 `
 
 export const ButtonDwCvA = styled.a`

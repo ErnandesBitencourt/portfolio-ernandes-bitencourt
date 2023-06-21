@@ -1,8 +1,8 @@
 import React from "react";
 import {ContainerMainContatos,LabelText, ContainerDivH3Contatos,TextH2Contatos,ContainerForm,Forms,FormNomeEmailDiv,InputNome, DivAssunto,ContainerInputMensagem,Textarea,ContainerButton,Button,DivInputNome,ContainerMenssagemTexArea,DivAssunto2,ContainerIcons} from "./StyledContatos"
 
-import linkedininicon from "../img/imgContatos/linkedininicon.png"
-import githubicon from "../img/imgContatos/githubicon.png"
+import linkedininicon from "../../img/imgContatos/linkedininicon.png"
+import githubicon from "../../img/imgContatos/githubicon.png"
 
 
 

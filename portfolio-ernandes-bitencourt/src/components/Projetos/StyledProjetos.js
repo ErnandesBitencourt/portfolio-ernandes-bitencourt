@@ -9,7 +9,7 @@ export const ContainerMainProjetos = styled.main`
     align-items: center;
     width: 1000px;
     padding-bottom: 5vh;
-    background-color:  #0b0a17;
+    
    
 
     @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
@@ -130,7 +130,7 @@ export const ContianerProjetos = styled.div`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: #0b0a17;
+   
    
     
     
@@ -161,7 +161,7 @@ export const TextNomeProjeto = styled.h1`
      font-size: 1.3rem;
      color:  #e5e5e5;
      font-weight: 700;
-     background-color:#0b0a17;
+    
      margin-left: 4px;
      border: none;
     
@@ -184,8 +184,7 @@ export const DivImgProjeto = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0b0a17;
-
+    
     @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
     /* celulares */
     width: 100%;
