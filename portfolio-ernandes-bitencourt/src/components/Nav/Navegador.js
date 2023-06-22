@@ -1,27 +1,22 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import LogoHeader1 from "../../img/imgLogos/LogoHeader1.png"
+import ernandeslogoscreen from "../../img/imgLogos/ernandeslogoscreen.png"
 import { ContainerImgLogoHeader, ContainerNavHeader, HamburgeContaine1, ImgLogoHeader, TextIlSobreMim, UlNavHeader } from "./StyledNavegador";
-export const Navegador = () => {
+
+
+export const Navegador = ({habilidades,projetos,contatos,sobreMim}) => {
     const [ativadoRes, setAtivadoRes] = useState(false)
-
-    const habilidades = useRef()
-    const projetos = useRef()
-    const contatos = useRef()
-    // const formacao= useRef()
-    const sobreMim = useRef()
-
     const executeScrollSections = (props) => {
         window.scrollTo({ behavior: 'smooth', top: props.current.offsetTop })
-    }   
-
+    } ; 
     const hamburgeMenu = ()=>{
         setAtivadoRes(!ativadoRes)
       
-    }
+    };
     return (
         <ContainerNavHeader >
         <ContainerImgLogoHeader>
-             <ImgLogoHeader src={LogoHeader1} alt="Foto do logo" />
+             <ImgLogoHeader src={ernandeslogoscreen} alt="Foto do logo" />
         </ContainerImgLogoHeader>
 
         

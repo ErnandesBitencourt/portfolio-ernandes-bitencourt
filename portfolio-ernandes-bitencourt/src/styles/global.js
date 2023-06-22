@@ -2,12 +2,13 @@ import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
 *{
- 
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 400;
     margin: 0;
     padding: 0;
     ::-webkit-scrollbar{
      width: 10px;
-     background-color: #080713;
+     background-color: none;
      border-radius:50px;
 }
     ::-webkit-scrollbar-track{
@@ -16,8 +17,9 @@ export default createGlobalStyle`
   
 }
     ::-webkit-scrollbar-thumb{
-  background: #380060;
+  background-color:${props => props.theme.corPrincipal};
   border-radius:50px;
+  
 }
 }
 

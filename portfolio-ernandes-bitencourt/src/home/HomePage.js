@@ -12,11 +12,11 @@ import {LoadingPage} from "../components/loadingPage/LoadingPage"
 import TelaDecarregamento from "../components/loadingPage/TelaDecarregamento"
 import githubicon from "../img/imgContatos/githubicon.png"
 import { Navegador } from "../components/Nav/Navegador";
+import { ScrollTop } from "../endpoints/ScrollTop";
 
 
 export  const HomePage = () => {
     const [loading , setLoading] = useState(false)
-   
     const [butoonTopOf,setButoonTopOf ]= useState(false)
 
     useEffect(()=>{
@@ -34,9 +34,6 @@ export  const HomePage = () => {
         }
         window.addEventListener("scroll",butoonTopOf1);
 
-        // return () =>{
-        //     window.removeEventListener("scroll",butoonTopOf1)
-        // }
     },[])
 
     const habilidades = useRef()
@@ -45,19 +42,7 @@ export  const HomePage = () => {
     // const formacao= useRef()
     const sobreMim = useRef()
  
-
-    const scrollTop = ()=>{
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-
-        })
-    }  
-    const executeScrollSections = (props) => {
-        window.scrollTo({ behavior: 'smooth', top: props.current.offsetTop })
-    }   
-  
-   const url="https://github.com/ErnandesBitencourt"
+//    const url="https://github.com/ErnandesBitencourt"
    
 
 
@@ -66,12 +51,13 @@ export  const HomePage = () => {
         { loading ? <TelaDecarregamento/> :
         <ContainerGeral >
             <ContainerHeader className="headerContainer"> 
-                <Navegador/>
+                <Navegador  habilidades={habilidades} projetos={projetos} contatos={contatos} sobreMim={sobreMim}   />
             </ContainerHeader> 
             
-            <ContianerButtomTop  butoonTopOf={butoonTopOf} onClick={()=>scrollTop()}>
+            <ContianerButtomTop  butoonTopOf={butoonTopOf} onClick={()=>ScrollTop()}>
                 <img src={iconPraCima} alt="Foto de voltar ao top" />
             </ContianerButtomTop>
+
              <ContainerGeralLoadingPage>
                 <LoadingPage/>
              </ContainerGeralLoadingPage>
@@ -83,7 +69,8 @@ export  const HomePage = () => {
 
             <ContainerGeralSkill ref={habilidades} >               
                 <HabilidadesTst1 />
-            </ContainerGeralSkill >             
+            </ContainerGeralSkill >   
+                      
             <ContainerGeralProjetos ref={projetos} id="projetos" >
                 <ProjetosTst />
                 <a target="_blank" href="https://github.com/ErnandesBitencourt">  <Img src={githubicon}/></a>

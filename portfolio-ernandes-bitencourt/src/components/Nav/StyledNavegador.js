@@ -4,22 +4,26 @@ import styled from "styled-components"
 export const ContainerNavHeader = styled.nav`
     width: 90%;
     max-width:1150px;
+    min-width: 320px;
     height:100%;
     display: flex;
     justify-content:space-between;
     align-items: center; 
+   background-color: ${props => props.theme.corFundo};
    
     
 `
 export const ContainerImgLogoHeader = styled.div`
     display: flex;
     justify-content: center;
-    width: 4vw;
-    height: 100%;
+    max-width: 13em;
+    min-width: 8em;
+    max-height: 4em;
+    min-height: 2em;
     cursor: pointer;
-    border-bottom: solid 1px #380060;
+    border-bottom: solid 1px ${props => props.theme.corPrincipal};
     margin-top: 7px;
-    
+    background-color: ${props => props.theme.corFundo};
     padding-bottom: 6px;
 
     @media screen and (min-device-width : 481px) and (max-device-width : 999px) { 
@@ -42,7 +46,7 @@ export const ContainerImgLogoHeader = styled.div`
 export const ImgLogoHeader = styled.img`
     margin-top: 3px;
     width: 100%;
-    height: 90%;
+    height: 100%;
     cursor: pointer;
     
     @media screen and (min-device-width : 481px) and (max-device-width : 999px) { 
@@ -66,7 +70,8 @@ export const UlNavHeader = styled.ul`
     align-items: center;
     width: 67%;
     height:100%;
-    border-bottom: solid 1px #380060;
+    /* border-bottom:  solid 1px ${props => props.theme.corPrincipal}; */
+    
     
     span{
         background:none;
@@ -88,7 +93,7 @@ export const UlNavHeader = styled.ul`
      top: 0;
      right: 0;
      transition: transform 0.3s ease-in-out;
-     border: solid 1px #380060;
+     border: solid 1px ${props => props.theme.corPrincipal};
 
     }
 
@@ -100,7 +105,6 @@ export const UlNavHeader = styled.ul`
         flex-direction: column;
         justify-content: center;
         align-items:center;
-        background: #080713;
         height: 100vh;
         width: 100%;
         text-align: center;
@@ -117,31 +121,22 @@ export const UlNavHeader = styled.ul`
 export const TextIlSobreMim = styled.li`
 
     list-style-type: none;
-    font-weight: 700;
+   
     text-decoration: none;
     text-align: center;
     align-items: center;
     font-size: 1.2rem;
-    color: #909090;
+    color: ${props => props.theme.corTexto};
     cursor: pointer;
-    padding-left:30px;
-    padding-right: 30px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    border-radius:10px;
-    background-image: linear-gradient(#380060,#380060);
-    background-repeat: no-repeat;
-    background-size: 0 100%;
-    background-position-x: right;
-    transition: background-size 500ms;
-    
+    font-weight: 400;
+  
 
     :hover{
-        background-size: 100% 100%;
-        background-position-x:left;
         
-        color:#e5e5e5;
-        
+        color: ${props => props.theme.corHoverText};
+        border-bottom: 1px solid ${props => props.theme.corHoverText};
+        transition: 0.8s;
+        font-weight: 400;
     }
 
     @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
