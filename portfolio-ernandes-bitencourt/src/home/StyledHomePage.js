@@ -2,7 +2,6 @@ import styled from "styled-components"
 
 
 export const ContainerGeral = styled.div`
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width:100%;
     display: flex;
     flex-direction: column;
@@ -20,6 +19,8 @@ export const ContainerGeral = styled.div`
 export const ContainerHeader = styled.header`
     
     width: 100%;
+    max-width: 100%;
+    min-width: 320px;
     height:9.5%;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -40,15 +41,19 @@ export const ContainerHeader = styled.header`
 
  export const ContainerGeralLoadingPage = styled.div`
 
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: 100% ;
+    width: 100%;
+    max-width: 100%;
+    min-width: 320px;
     height: 70vh;
+    max-height: 30em;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    margin-top: 3em;
     padding-top: 10vh;
     padding-bottom: 10vh;
+    box-sizing: border-box;
+    border: solid 1px red;
  `
 
 
@@ -62,7 +67,10 @@ export  const  ContainerGeralMainSobreMim = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
+    max-width: 100%;
+    min-width: 320px;
     height: 50vh;
+    max-height: 50vh;
     margin-top:10vh;
     
 

@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 export default createGlobalStyle`
 *{
    font-family: 'Open Sans', sans-serif;
-   font-weight: 400;
+  
     margin: 0;
     padding: 0;
     ::-webkit-scrollbar{

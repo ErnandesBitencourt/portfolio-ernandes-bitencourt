@@ -21,12 +21,12 @@ export const ContainerImgLogoHeader = styled.div`
     max-height: 4em;
     min-height: 2em;
     cursor: pointer;
-    border-bottom: solid 1px ${props => props.theme.corPrincipal};
+    border-bottom: solid 1px ${props => props.theme.corSecundaria};
     margin-top: 7px;
     background-color: ${props => props.theme.corFundo};
     padding-bottom: 6px;
 
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) { 
+    /* @media screen and (min-device-width : 481px) and (max-device-width : 999px) { 
 
         height: 100%;
         width: 80px;
@@ -41,7 +41,7 @@ export const ContainerImgLogoHeader = styled.div`
         border-bottom: none;
         
 
-    }
+    } */
 `
 export const ImgLogoHeader = styled.img`
     margin-top: 3px;
@@ -49,7 +49,7 @@ export const ImgLogoHeader = styled.img`
     height: 100%;
     cursor: pointer;
     
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) { 
+    /* @media screen and (min-device-width : 481px) and (max-device-width : 999px) { 
 
         height: 100%;
         width: 100%;
@@ -62,7 +62,7 @@ export const ImgLogoHeader = styled.img`
         height: 100%;
         width: 100%;
         
-    };
+    }; */
 `
 export const UlNavHeader = styled.ul`
     display: flex;
@@ -83,7 +83,7 @@ export const UlNavHeader = styled.ul`
     gap: 30px;
     flex-direction: column;
     justify-content: center;
-    background: #080713;
+    background: ${props => props.theme.corFundo};
     transform: ${({ativadoRes }) => (ativadoRes ? "translateX(0)" : "translateX(-100%)")};
      height: 60vh;
      width: 30%;
@@ -121,37 +121,40 @@ export const UlNavHeader = styled.ul`
 export const TextIlSobreMim = styled.li`
 
     list-style-type: none;
-   
     text-decoration: none;
     text-align: center;
     align-items: center;
     font-size: 1.2rem;
     color: ${props => props.theme.corTexto};
     cursor: pointer;
-    font-weight: 400;
+    font-weight: 700;
+    background-image: linear-gradient(transparent 0%,transparent 90% , ${props => props.theme.corSecundaria}, ${props => props.theme.corSecundaria});
+    background-repeat: no-repeat;
+    background-size: 15% 100%;
+    background-position-x: left;
+    transition: background-size 300ms;
+    
   
 
     :hover{
         
-        color: ${props => props.theme.corHoverText};
-        border-bottom: 1px solid ${props => props.theme.corHoverText};
-        transition: 0.8s;
-        font-weight: 400;
+        background-size: 100% 100%;
+        background-position-x: left;
+        color: ${props => props.theme.corHoverTextClaro};
+        background-image: linear-gradient(transparent 0%,transparent 90% , ${props => props.theme.corHoverText}, ${props => props.theme.corHoverText});
+        transition: 0.5s;
+        
+        
     }
 
     @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
             /* tablets */
             
-            width: 85%;
+
             display: flex;
             justify-content: center;
             align-items: center;
-            color: #909090;
             border-bottom: none;
-            :hover{
-            background-color: #909090;
-            color:#e5e5e5;
-     }
 
     }
 
@@ -159,9 +162,8 @@ export const TextIlSobreMim = styled.li`
         /* celulares */
             display: flex;
             flex-direction: column;
-            width: 100%;
+            
             height: 5vh;
-            color: #909090;
             border-bottom: none;
             padding-top: 10px;
             padding-bottom: 0;
@@ -173,13 +175,9 @@ export const TextIlSobreMim = styled.li`
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
+                
             }
-            :hover{
-               background :none ;
-             color:#e5e5    
-             
-
-            }
+        
    }
    
     
@@ -214,6 +212,7 @@ export const HamburgeContaine1 = styled.div`
             
             width: 2rem;
             height: 0.2rem;
+            
             background: ${({ ativadoRes2 }) =>
             ativadoRes2 ? '#e5e5e5' : '#e5e5e5'};
             border-radius: 10px;

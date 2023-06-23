@@ -2,14 +2,17 @@ import styled from "styled-components"
 
 export const ContainerGeralLog = styled.div`
     margin-top: 150px;
-    font-family: monospace;
-    
-    width: 1150px;
+    width: 100%;
+    max-width: 60%;
+    min-width: 320px;
     height: 100%;
+    max-height: 100%;
+    min-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
+    border: solid 1px red;
     
     @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
     /* celulares */
@@ -24,7 +27,7 @@ export const ContainerGeralLog = styled.div`
 
 `
 export const Container = styled.div`
-
+    border: solid 1px blue;
     display: flex;
     font-family: monospace;
     flex-direction: column;
@@ -32,50 +35,52 @@ export const Container = styled.div`
     align-items: center;
     width: 50%;
     height: 100%;
+    box-sizing: border-box;
     border-radius: 5px;
     white-space: nowrap;
     
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    /* celulares */
+    /* @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
+   
         
         width:95%;
     };
     @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-        /* tablets */
+       
         
         width:  55vh;
     };
-    
+     */
 
-`
+`;
 export const ContainerSegundarios = styled.div`
 
     display: flex;
-    font-family: monospace;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     width: 100%;
-    height: 95%;
-    border-radius: 5px;
+    height: 100%;
     white-space: nowrap;
-    
+    border: solid 1px white;
+    box-sizing: border-box;
 
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    /* celulares */
+    /* @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
+    
         
         width:95%;
     };
     @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-        /* tablets */
+        
         
         width:  55vh;
     };
-    
-`
+     */
+`;
 
 export const ContainerLogo2 = styled.div`
     width: 50%;
+    max-width: 50%;
+    min-width: 320px;
     height: 65%;
     display: flex;
     align-items: center;
@@ -116,7 +121,8 @@ export const ContainerHeader = styled.header`
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height:45%;
+    height:50%;
+    border: solid 1px red;
 
 `
 
@@ -213,10 +219,10 @@ export const HoverButton = styled.p`
     display: flex;
     justify-content: center;
     align-items: center;
-     width: 100%;
-    height: 15%;
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    /* celulares */
+    width: 100%;
+    height: auto;
+    /* @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
+   
         display: flex;
         justify-content: center;
         align-items: center;
@@ -225,42 +231,42 @@ export const HoverButton = styled.p`
         
     }
     @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-        /* tablets */
+      
         
         width: 100%;
         height: 7vh;
-    }
+    } */
 
- `
+ `;
 
 export const NomeH3 = styled.h3`
     text-align:center;
-    font-size: 2.5em;
-    font-weight: 7000;
-    color:  #e5e5e5;
+    font-size: 1em;
+    
+    color: ${props => props.theme.corTexto};
    
 
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    /* celulares */
+    /* @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
+    
         font-size: 1.6em;
     }
     @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-        /* tablets */
+       
         font-size: 2em;
-    }
+    } */
 
     
-`
+`;
 export const ContainerHello =styled.div`
     
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    width: 70%;
-    height: 15%;
+    width: 65%;
+    height: auto
 
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    /* celulares */
+    /* @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
+    
         display: flex;
         justify-content: center;
         align-items: center;
@@ -268,44 +274,43 @@ export const ContainerHello =styled.div`
         height: 5vh;
     }
     @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-        /* tablets */
+        
     
         width:  100%;
         display: flex;
         justify-content: center;
         align-items: center;
-    }
+    } */
   
 `
 
 export const NomeHello = styled.h1`
     text-align: center;
-    font-size: 2em;
-    font-weight: 7000;
-    color:  #e5e5e5;
+    font-size: 1em;
+    color: ${props => props.theme.corTexto};
  
 
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    /* celulares */
+    /* @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
+    
         font-size: 1.5em;
        
     }
     @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-        /* tablets */
+       
         font-size: 1.6em;
-}
+} */
 
 
-`
+`;
 export const ContainerIm =styled.div`
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 15%;
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    /* celulares */
+    height: auto;
+    /* @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
+    
         display: flex;
         justify-content: center;
         align-items: center;
@@ -313,36 +318,36 @@ export const ContainerIm =styled.div`
         height: 5vh;
     }
     @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-        /* tablets */
+     
         width:  100%;
-}
+} */
    
-`
+`;
 export const TextIm = styled.h2`
-    font-size: 2em;
-    font-weight: 7000;
-    color:  #e5e5e5;
+    font-size: 1em;
+    color: ${props => props.theme.corTexto};
 
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    /* celulares */
+    /* @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
+    
        font-size: 1.6em;
     }
     @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-        /* tablets */
+       
         font-size: 1.8em;
-    }
+    } */
 
 
-`
+`;
 
 export const ContainerTextp =styled.div`
     
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 15%;
+    width: 35%;
+    height: auto;
     flex-wrap: wrap;
+    box-sizing: border-box;
   
    
 `
@@ -350,46 +355,47 @@ export const ContainerTextp =styled.div`
 export const Textp = styled.p`
 
     text-align: center;
-    font-size: 1.8em;
-    font-weight: 7000;
-    color:  #e5e5e5;
+    font-size: 1em;
+    color: ${props => props.theme.corTexto};
     overflow: hidden;
-    
     animation: typeTextp 4s steps(40) 1s normal both;
+    background-image: linear-gradient(transparent 0%,transparent 90% , ${props => props.theme.corSecundaria}, ${props => props.theme.corSecundaria});
+    background-repeat: no-repeat;
+    background-size: 8% 100% ;
 
     @keyframes typeTextp {
         from {
             width: 0;
         }
         to {
-            width: 24em;
+            width: 100%;
         }
     }
 //---------------------//
     
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    /* celulares */
+    /* @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
+    
         font-size: 1.3em;
         
     
     }
     @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-        /* tablets */
+       
         font-size: 1.4em;
-    }
+    } */
 
     
-`
+`;
 export const ContaineFooter= styled.footer`
    
     display: flex;
-    
     gap: 20px;
     margin-top: 20px;
-    border-bottom: 1px solid #909090 ;
+    border-bottom: 1px solid ${props => props.theme.corHoverTextClaro} ;
  
 
-`
+`;
+
 export const FooterAnimetion = styled.div`
 
 animation: float 5s ease-in-out infinite;
@@ -416,27 +422,27 @@ display: flex;
 
 
 
-`
+`;
 
 
  export const ALinkding = styled.a`
     animation-delay: 1s;
  
- `
+ `;
   export const AGmail= styled.a`
     animation-delay: 2s;
-  `
+  `;
 
 export const SaibaMaisP = styled.p`
     font-size: 35px;
     font-weight: 7000;
     color: white;
 
-`
+`;
 
 export const IconGmail = styled.img`
-    width:  50px;
-    height: 50px;
+    width:  40px;
+    height: 40px;
     border-radius: 50%;
     :hover{
         border: none;
@@ -458,8 +464,8 @@ export const IconGmail = styled.img`
 
 `
 export const IconLinkidin = styled.img`
-    width:  50px;
-    height: 50px;
+    width:  40px;
+    height: 40px;
     border-radius: 50%;
     :hover{
         border: none;
@@ -478,8 +484,8 @@ export const IconLinkidin = styled.img`
     }
 `
 export const IconGitHub = styled.img`
-    width:  50px;
-    height: 50px;
+    width:  40px;
+    height: 40px;
     border-radius: 50%;
     :hover{
         border: none;

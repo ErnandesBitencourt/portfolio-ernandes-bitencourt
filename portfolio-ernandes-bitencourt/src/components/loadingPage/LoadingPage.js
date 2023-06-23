@@ -43,13 +43,13 @@ export const LoadingPage = () => {
                      </ContainerTextp>
 
 
-                     <ContainerButon>
-                        <ButtonEfect>  
+                     {/* <ContainerButon>
+                        <ButtonEfect>   */}
                       
 
                         {/* <HoverButton> <Link style={linkStyle} to={curriculoErnandesBitencourt} target="_blank" download>  Currículo  </Link></HoverButton> */}
-                        </ButtonEfect>
-                    </ContainerButon>
+                        {/* </ButtonEfect>
+                    </ContainerButon> */}
 
                     
                     <ContaineFooter>
