@@ -7,7 +7,7 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     ::-webkit-scrollbar{
-     width: 10px;
+     width: 4px;
      background-color: none;
      border-radius:50px;
 }
@@ -17,8 +17,9 @@ export default createGlobalStyle`
   
 }
     ::-webkit-scrollbar-thumb{
-  background-color:${props => props.theme.corPrincipal};
+  background-color:${props => props.theme.corSecundaria};
   border-radius:50px;
+  
   
 }
 }

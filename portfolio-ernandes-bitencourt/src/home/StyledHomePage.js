@@ -44,8 +44,8 @@ export const ContainerHeader = styled.header`
     width: 100%;
     max-width: 100%;
     min-width: 320px;
-    height: 70vh;
-    max-height: 30em;
+    height: 100vh;
+    max-height: 65vh;
     display: flex;
     justify-content: center;
     align-items: center;

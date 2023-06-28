@@ -13,6 +13,7 @@ export const ContainerGeralLog = styled.div`
     align-items: center;
     gap: 15px;
     border: solid 1px red;
+    background-color: ${props => props.theme.corFundo};
     
     @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
     /* celulares */
@@ -78,7 +79,7 @@ export const ContainerSegundarios = styled.div`
 `;
 
 export const ContainerLogo2 = styled.div`
-    width: 50%;
+    width: 100%;
     max-width: 50%;
     min-width: 320px;
     height: 65%;
@@ -106,7 +107,7 @@ export const ContainerImgLogo = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-   
+    background-color: ${props => props.theme.corFundo};
 `
 export const ImgLogo =styled.img`
     width: 100%;

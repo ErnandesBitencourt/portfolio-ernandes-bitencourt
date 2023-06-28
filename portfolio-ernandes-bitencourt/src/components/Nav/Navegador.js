@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import LogoHeader1 from "../../img/imgLogos/LogoHeader1.png"
+
 import novologoernandesscreen from "../../img/imgLogos/novologoernandesscreen.png"
 import { ContainerImgLogoHeader, ContainerNavHeader, HamburgeContaine1, ImgLogoHeader, TextIlSobreMim, UlNavHeader } from "./StyledNavegador";
 
