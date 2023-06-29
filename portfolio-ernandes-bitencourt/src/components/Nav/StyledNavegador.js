@@ -15,13 +15,14 @@ export const ContainerNavHeader = styled.nav`
 `
 export const ContainerImgLogoHeader = styled.div`
     display: flex;
+    flex: 1 1;
     justify-content: center;
     max-width: 13em;
     min-width: 8em;
     max-height: 4em;
     min-height: 2em;
     cursor: pointer;
-    border-bottom: solid 1px ${props => props.theme.corSecundaria};
+
     margin-top: 7px;
     background-color: ${props => props.theme.corFundo};
     padding-bottom: 6px;
@@ -42,12 +43,13 @@ export const ContainerImgLogoHeader = styled.div`
         
 
     } */
-`
+`;
 export const ImgLogoHeader = styled.img`
     margin-top: 3px;
     width: 100%;
     height: 100%;
     cursor: pointer;
+    
     
     /* @media screen and (min-device-width : 481px) and (max-device-width : 999px) { 
 
@@ -130,7 +132,7 @@ export const TextIlSobreMim = styled.li`
     font-weight: 700;
     background-image: linear-gradient(transparent 0%,transparent 90% , ${props => props.theme.corSecundaria}, ${props => props.theme.corSecundaria});
     background-repeat: no-repeat;
-    background-size: 15% 100%;
+    background-size: 15% 100% ;
     background-position-x: left;
     transition: background-size 300ms;
     

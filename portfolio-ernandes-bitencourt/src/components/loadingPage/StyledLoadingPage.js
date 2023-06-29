@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const ContainerGeralLog = styled.div`
-    margin-top: 150px;
+    margin-top: 100px;
     width: 100%;
     max-width: 60%;
     min-width: 320px;
@@ -12,7 +12,7 @@ export const ContainerGeralLog = styled.div`
     justify-content: center;
     align-items: center;
     gap: 15px;
-    border: solid 1px red;
+
     background-color: ${props => props.theme.corFundo};
     
     @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
@@ -26,19 +26,20 @@ export const ContainerGeralLog = styled.div`
         width:  85%;
     };
 
-`
+`;
 export const Container = styled.div`
-    border: solid 1px blue;
     display: flex;
     font-family: monospace;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 50%;
+    width: 100%;
+    max-width: 50%;
+    min-width: 320px;
     height: 100%;
-    box-sizing: border-box;
-    border-radius: 5px;
-    white-space: nowrap;
+    max-height: 100%;
+    max-height: 100%;
+    flex: 1 1 ;
     
     /* @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
    
@@ -62,8 +63,8 @@ export const ContainerSegundarios = styled.div`
     width: 100%;
     height: 100%;
     white-space: nowrap;
-    border: solid 1px white;
     box-sizing: border-box;
+    flex: 1 1 ;
 
     /* @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
     
@@ -82,10 +83,14 @@ export const ContainerLogo2 = styled.div`
     width: 100%;
     max-width: 50%;
     min-width: 320px;
-    height: 65%;
+    height: 100%;
+    max-height: 80%;
+    min-height: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex: 1 1 ;
+    
     
     border-radius: 10px;
     @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
@@ -102,7 +107,7 @@ export const ContainerLogo2 = styled.div`
 
 export const ContainerImgLogo = styled.div`
 
-    width: 72%;
+    width: 80%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -119,11 +124,12 @@ export const ContainerHeader = styled.header`
 
     display: flex;
     flex-direction:column;
-    justify-content: space-around;
+    gap: 2.5em;
     align-items: center;
     width: 100%;
     height:50%;
-    border: solid 1px red;
+  
+    
 
 `
 
@@ -242,7 +248,7 @@ export const HoverButton = styled.p`
 
 export const NomeH3 = styled.h3`
     text-align:center;
-    font-size: 1em;
+    font-size:  1.5em;
     
     color: ${props => props.theme.corTexto};
    
@@ -287,7 +293,7 @@ export const ContainerHello =styled.div`
 
 export const NomeHello = styled.h1`
     text-align: center;
-    font-size: 1em;
+    font-size: 1.5em;
     color: ${props => props.theme.corTexto};
  
 
@@ -325,7 +331,7 @@ export const ContainerIm =styled.div`
    
 `;
 export const TextIm = styled.h2`
-    font-size: 1em;
+    font-size:  1.5em;
     color: ${props => props.theme.corTexto};
 
     /* @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
@@ -345,10 +351,12 @@ export const ContainerTextp =styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 35%;
+    width: 51%;
     height: auto;
-    flex-wrap: wrap;
     box-sizing: border-box;
+    word-wrap: normal;
+  
+   
   
    
 `
@@ -356,20 +364,24 @@ export const ContainerTextp =styled.div`
 export const Textp = styled.p`
 
     text-align: center;
-    font-size: 1em;
+    font-size:  1.5em;
     color: ${props => props.theme.corTexto};
     overflow: hidden;
     animation: typeTextp 4s steps(40) 1s normal both;
     background-image: linear-gradient(transparent 0%,transparent 90% , ${props => props.theme.corSecundaria}, ${props => props.theme.corSecundaria});
     background-repeat: no-repeat;
     background-size: 8% 100% ;
+    word-wrap: normal;
+  
 
     @keyframes typeTextp {
         from {
             width: 0;
+            
         }
         to {
             width: 100%;
+           
         }
     }
 //---------------------//
@@ -391,7 +403,7 @@ export const ContaineFooter= styled.footer`
    
     display: flex;
     gap: 20px;
-    margin-top: 20px;
+    margin-top: 25px;
     border-bottom: 1px solid ${props => props.theme.corHoverTextClaro} ;
  
 
@@ -413,7 +425,7 @@ display: flex;
 
 }
 50% {
-    transform: translateY(-15px);
+    transform: translateY(-20px);
 
 }
 100% {
@@ -431,7 +443,7 @@ display: flex;
  
  `;
   export const AGmail= styled.a`
-    animation-delay: 2s;
+    animation-delay: 3s;
   `;
 
 export const SaibaMaisP = styled.p`

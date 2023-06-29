@@ -3,7 +3,7 @@ import {ContainerSegundarios,ContainerGeralLog ,ImgLogo,ContainerImgLogo, Contai
 import { Link } from "react-router-dom";
 import linkedininicon from "../../img/imgContatos/linkedininicon.png"
 import githubicon from "../../img/imgContatos/githubicon.png"
-import logoscreen from "../../img/imgLogos/logoscreen.gif"
+import ernandeslilasscreen from "../../img/imgLogos/ernandeslilasscreen.gif"
 // import curriculoErnandesBitencourt from "../../curriculo/curriculoErnandesBitencourt.pdf"
 
 export const linkStyle = {
@@ -76,7 +76,7 @@ export const LoadingPage = () => {
                 
              <ContainerLogo2>
                  <ContainerImgLogo>
-                    <ImgLogo src={logoscreen} alt="Logo"/>
+                    <ImgLogo src={ernandeslilasscreen} alt="Logo"/>
                  </ContainerImgLogo>
              </ContainerLogo2>
                     

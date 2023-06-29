@@ -45,7 +45,7 @@ export const ContainerHeader = styled.header`
     max-width: 100%;
     min-width: 320px;
     height: 100vh;
-    max-height: 65vh;
+    max-height: 75vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +53,7 @@ export const ContainerHeader = styled.header`
     padding-top: 10vh;
     padding-bottom: 10vh;
     box-sizing: border-box;
-    border: solid 1px red;
+
  `
 
 

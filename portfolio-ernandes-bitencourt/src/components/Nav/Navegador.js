@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import novologoernandesscreen from "../../img/imgLogos/novologoernandesscreen.png"
+import logolilas from "../../img/imgLogos/logolilas.png"
 import { ContainerImgLogoHeader, ContainerNavHeader, HamburgeContaine1, ImgLogoHeader, TextIlSobreMim, UlNavHeader } from "./StyledNavegador";
 
 
@@ -16,7 +16,7 @@ export const Navegador = ({habilidades,projetos,contatos,sobreMim}) => {
     return (
         <ContainerNavHeader >
         <ContainerImgLogoHeader>
-             <ImgLogoHeader src={novologoernandesscreen} alt="Foto do logo" />
+             <ImgLogoHeader src={logolilas} alt="Foto do logo" />
         </ContainerImgLogoHeader>
 
         
