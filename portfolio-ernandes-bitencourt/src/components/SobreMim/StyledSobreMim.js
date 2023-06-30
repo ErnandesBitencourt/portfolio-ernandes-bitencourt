@@ -8,9 +8,16 @@ export  const  ContainerMainSobreMim = styled.main`
     flex-direction: column;
     justify-content:space-between;
     align-items: center;
-    width: 1000px;
+    width: 100%;
+    max-width: 60%;
+    min-width: 490px;
+    flex: 1 1 ;
     height: 100%;
+    max-height: 100%;
+    min-height: 80%;
    
+
+    border: solid 1px red;
     
     @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
     /* celulares */
@@ -30,7 +37,8 @@ export  const  ContainerMainSobreMim = styled.main`
 `
 export const ContainerDivSobreMim = styled.div`
     width: 100%;
-    height: 5vh;    
+    max-width: 100%;
+    min-width: 320px;
     display: flex;
     justify-content: left;
     align-items: center; 
@@ -175,6 +183,7 @@ export const ContainerDivImgSobreMin = styled.div`
 export const ImgSobreMin = styled.img`
      width: 95%;
     height: 100%;
+    
    
 `
 

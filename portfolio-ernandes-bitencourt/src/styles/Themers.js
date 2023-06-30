@@ -5,5 +5,9 @@ export const Colors =  {
     corPrincipal: "#380060",
     corHoverText: "#9545CD",
     corHoverTextClaro:"#FFFFFF",
-    corSecundaria:"#9545CD"
+    corSecundaria:"#9545CD",
+    corImg: "#009600",
+    maxWidth: "60%",
+    minWidth: "490px",
+    maxWidthHeader: "65%",
 }

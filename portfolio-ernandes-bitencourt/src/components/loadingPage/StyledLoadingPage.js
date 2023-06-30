@@ -3,8 +3,8 @@ import styled from "styled-components"
 export const ContainerGeralLog = styled.div`
     margin-top: 100px;
     width: 100%;
-    max-width: 60%;
-    min-width: 320px;
+    max-width: ${props => props.theme.maxWidth};
+    min-width: ${props => props.theme.minWidth};
     height: 100%;
     max-height: 100%;
     min-height: 100%;
@@ -12,7 +12,7 @@ export const ContainerGeralLog = styled.div`
     justify-content: center;
     align-items: center;
     gap: 15px;
-
+  
     background-color: ${props => props.theme.corFundo};
     
     @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
@@ -112,7 +112,7 @@ export const ContainerImgLogo = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: ${props => props.theme.corFundo};
+    
 `
 export const ImgLogo =styled.img`
     width: 100%;

@@ -15,9 +15,11 @@ export const Navegador = ({habilidades,projetos,contatos,sobreMim}) => {
     };
     return (
         <ContainerNavHeader >
+
         <ContainerImgLogoHeader>
              <ImgLogoHeader src={logolilas} alt="Foto do logo" />
         </ContainerImgLogoHeader>
+
 
         
 

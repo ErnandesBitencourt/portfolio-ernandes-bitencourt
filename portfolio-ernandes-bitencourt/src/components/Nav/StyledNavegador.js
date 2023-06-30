@@ -2,30 +2,31 @@ import styled from "styled-components"
 
 
 export const ContainerNavHeader = styled.nav`
-    width: 90%;
-    max-width:1150px;
-    min-width: 320px;
+    width: 100%;
+    max-width:${props => props.theme.maxWidthHeader};
+    min-width: ${props => props.theme.minWidth};
     height:100%;
     display: flex;
     justify-content:space-between;
     align-items: center; 
    background-color: ${props => props.theme.corFundo};
    
-    
+   
+
 `
 export const ContainerImgLogoHeader = styled.div`
     display: flex;
-    flex: 1 1;
+    
     justify-content: center;
-    max-width: 13em;
-    min-width: 8em;
-    max-height: 4em;
-    min-height: 2em;
+    width: 17em;
+    max-width: 12em;
+    min-width: 9em;
+     height: auto;
     cursor: pointer;
-
     margin-top: 7px;
     background-color: ${props => props.theme.corFundo};
     padding-bottom: 6px;
+    
 
     /* @media screen and (min-device-width : 481px) and (max-device-width : 999px) { 
 
@@ -47,6 +48,7 @@ export const ContainerImgLogoHeader = styled.div`
 export const ImgLogoHeader = styled.img`
     margin-top: 3px;
     width: 100%;
+    
     height: 100%;
     cursor: pointer;
     
@@ -68,11 +70,14 @@ export const ImgLogoHeader = styled.img`
 `
 export const UlNavHeader = styled.ul`
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    width: 67%;
+    width: 100%;
+    max-width: 55%;
+    min-width:300px;
     height:100%;
-    /* border-bottom:  solid 1px ${props => props.theme.corPrincipal}; */
+
+    
     
     
     span{
@@ -157,6 +162,7 @@ export const TextIlSobreMim = styled.li`
             justify-content: center;
             align-items: center;
             border-bottom: none;
+            font-size: 0.8em;
 
     }
 
@@ -169,7 +175,7 @@ export const TextIlSobreMim = styled.li`
             border-bottom: none;
             padding-top: 10px;
             padding-bottom: 0;
-
+            font-size: 0.8em;
             span{
                 width: 100%;
                 height: 100%;

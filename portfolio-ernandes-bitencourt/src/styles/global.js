@@ -1,9 +1,10 @@
 import { createGlobalStyle } from "styled-components";
-
+import background from "../img/imgLogos/background.jpg"
 export default createGlobalStyle`
 *{
    font-family: 'Open Sans', sans-serif;
-  
+   
+
     margin: 0;
     padding: 0;
     ::-webkit-scrollbar{

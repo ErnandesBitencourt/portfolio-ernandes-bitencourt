@@ -6,6 +6,7 @@ import githubicon from "../../img/imgContatos/githubicon.png"
 import ernandeslilasscreen from "../../img/imgLogos/ernandeslilasscreen.gif"
 // import curriculoErnandesBitencourt from "../../curriculo/curriculoErnandesBitencourt.pdf"
 
+
 export const linkStyle = {
         
     textDecoration: "none",
@@ -18,7 +19,7 @@ export const LoadingPage = () => {
 
     
     return (
-        <ContainerGeralLog >
+        <ContainerGeralLog  >
 
  
             <Container> 

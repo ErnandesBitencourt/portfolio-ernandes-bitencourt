@@ -1,11 +1,14 @@
 import styled from "styled-components"
 
 
+
 export const ContainerGeral = styled.div`
     width:100%;
+    min-width: ${props => props.theme.minWidth};
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     overflow: hidden;
     background-color: ${props => props.theme.corFundo};
 
@@ -20,7 +23,7 @@ export const ContainerHeader = styled.header`
     
     width: 100%;
     max-width: 100%;
-    min-width: 320px;
+    min-width: ${props => props.theme.minWidth};
     height:9.5%;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -31,6 +34,7 @@ export const ContainerHeader = styled.header`
     top: 0;
     z-index: 4;
     background-color: ${props => props.theme.corFundo};
+   
     
 
         
@@ -53,7 +57,7 @@ export const ContainerHeader = styled.header`
     padding-top: 10vh;
     padding-bottom: 10vh;
     box-sizing: border-box;
-
+   
  `
 
 
@@ -61,7 +65,7 @@ export const ContainerHeader = styled.header`
 
 
 export  const  ContainerGeralMainSobreMim = styled.div`
-    padding-top: 15vh;
+    padding-top: 14vh;
     padding-bottom: 10vh;
     display: flex;
     justify-content: center;
@@ -69,9 +73,12 @@ export  const  ContainerGeralMainSobreMim = styled.div`
     width: 100%;
     max-width: 100%;
     min-width: 320px;
-    height: 50vh;
-    max-height: 50vh;
+    height: 40em;
+    max-height: 24em;
+    min-height: 15;
     margin-top:10vh;
+    border: solid 1px red;
+    
     
 
      @media screen and (min-device-width : 100px) and (max-device-width : 480px) {

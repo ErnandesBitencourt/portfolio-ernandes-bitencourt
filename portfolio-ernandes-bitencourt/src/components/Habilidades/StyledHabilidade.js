@@ -179,21 +179,13 @@ export const Cards = styled.div`
     padding-top: 5px ;
     padding-bottom: 5px;
     align-items: center;
-    box-shadow:
-    0.9px 1.5px 1.6px rgba(0, 0, 0, 0.041),
-    2px 3.4px 3.4px rgba(0, 0, 0, 0.061),
-    3.3px 5.7px 5.8px #380060,
-    5px 8.6px 8.7px rgba(0, 0, 0, 0.087),
-    7.3px 12.4px 12.5px rgba(0, 0, 0, 0.098),
-    10.3px 17.5px 17.7px rgba(0, 0, 0, 0.109),
-    14.6px 24.9px 25.1px rgba(0, 0, 0, 0.121),
-    21.2px 36.1px 36.5px rgba(0, 0, 0, 0.136),
-    32.6px 55.7px 56.3px rgba(0, 0, 0, 0.156),
-    58px 99px 100px rgba(0, 0, 0, 0.19);
+    box-sizing: border-box;
+  
     flex: 1 1 170px;
     img{
         width: 65%;
         height: 65%;
+        filter: drop-shadow(10px 8px 6px #009600);
     }
 
     :hover{
