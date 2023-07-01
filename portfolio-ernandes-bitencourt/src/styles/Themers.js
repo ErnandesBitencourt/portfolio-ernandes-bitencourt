@@ -7,7 +7,7 @@ export const Colors =  {
     corHoverTextClaro:"#FFFFFF",
     corSecundaria:"#9545CD",
     corImg: "#009600",
-    maxWidth: "60%",
+    maxWidth: "1150px",
     minWidth: "490px",
     maxWidthHeader: "65%",
 }

@@ -12,7 +12,7 @@ export const ContainerGeralLog = styled.div`
     justify-content: center;
     align-items: center;
     gap: 15px;
-  
+
     background-color: ${props => props.theme.corFundo};
     
     @media screen and (min-device-width : 100px) and (max-device-width : 480px) {

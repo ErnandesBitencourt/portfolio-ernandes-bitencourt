@@ -13,7 +13,7 @@ export const ContainerGeral = styled.div`
     background-color: ${props => props.theme.corFundo};
 
 
-`
+`;
 
 
 
@@ -38,7 +38,7 @@ export const ContainerHeader = styled.header`
     
 
         
-`
+`;
 
 
 //----------------------------Container LoadingPage-------------------//
@@ -58,7 +58,7 @@ export const ContainerHeader = styled.header`
     padding-bottom: 10vh;
     box-sizing: border-box;
    
- `
+ `;
 
 
 //----------------------Container Sobre mim -------------------------------//
@@ -66,34 +66,19 @@ export const ContainerHeader = styled.header`
 
 export  const  ContainerGeralMainSobreMim = styled.div`
     padding-top: 14vh;
-    padding-bottom: 10vh;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     max-width: 100%;
-    min-width: 320px;
-    height: 40em;
-    max-height: 24em;
-    min-height: 15;
-    margin-top:10vh;
-    border: solid 1px red;
-    
-    
+    min-width: ${props => props.theme.minWidth};
+    height: 45em;
+    max-height: 25em;
+    min-height: 15em;
 
-     @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    /* celulares */
-     padding: 12vh 0 6vh 0;
-        
-    };
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-        /* tablets */
-        padding: 15vh 0 6vh 0 ;
-       
-    };
-   
  
-`
+`;
 
 
 //------------------------Butto voltar ao topo -----------------------//
@@ -161,9 +146,12 @@ export  const  ContainerGeralSkill = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 60vh;
-    padding-top: 15vh;
-    padding-bottom: 5vh;
+    min-width: ${props => props.theme.minWidth};
+    height: 45em;
+    max-height: 30em;
+    padding-top: 13vh;
+  
+  
    
 
     @media screen and (min-device-width : 100px) and (max-device-width : 480px) {

@@ -1,6 +1,7 @@
 import React from "react";
-import {TextSobreMimDiv, ContainerMainSobreMim,ContainerDivSobreMim , TextHSobreMim, ContainerDivTextPSobreMin,TextP,StrongP,ContainerButtonDwCv,ContainerDivImgSobreMin,ImgSobreMin,ButtonDwCvA } from "./StyledSobreMim"
+import {TextSobreMimDiv, ContainerMainSobreMim,ContainerDivSobreMim , TextHSobreMim, ContainerDivTextPSobreMin,ContainerButtonDwCv,ContainerDivImgSobreMin,ImgSobreMin,ButtonDwCvA } from "./StyledSobreMim"
 import AvatarSobremim from "../../img/imgSobreMim/AvatarSobremim.png"
+import { TextoSobreMin } from "../../endpoints/TextoSobreMin";
 // import { Link } from "react-router-dom";
 // import {curriculoErnandesBitencourt} from "../../curriculo/curriculoErnandesBitencourt.pdf"
 // import {linkStyle} from "../loadingPage/LoadingPage"
@@ -27,10 +28,9 @@ export const SobreMim = () => {
                     </ContainerDivImgSobreMin>
 
                     <TextSobreMimDiv>
-                        <TextP >
-                            Olá, me chamo <StrongP>Ernandes Bitencourt.</StrongP><br/>
-                            Sou desenvolvedor em formação no bootcamp Labenu web full-stack,onde realizo projetos práticos, individuais e em grupos, já domino o HTML5, CSS3, Javascript, React.JS, React hooks, Typescript, Styled-component, Git ,Node.JS e mysql workbench, sou curioso,gosto de novos desafios e de sempre aprender coisas novas e também sempre está me atualizando.
-                        </TextP>
+
+                        <TextoSobreMin/> 
+                    
                     </TextSobreMimDiv>
                        
 

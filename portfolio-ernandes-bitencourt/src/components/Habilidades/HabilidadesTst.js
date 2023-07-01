@@ -9,7 +9,7 @@ export const HabilidadesTst1 = () => {
     return (
         <ContainerMainSkill  >
            <ContainerDivSkill  >
-                 <TextHSkill> Habilidades.</TextHSkill>
+                 <TextHSkill> Principais Habilidades.</TextHSkill>
             </ContainerDivSkill>
 
 
@@ -22,7 +22,7 @@ export const HabilidadesTst1 = () => {
 
                     <ContainerCards>
 
-                        <ContainerDivCard>
+                       
 
                              {frontende1.map((habi)=>{
                                return <Cards  key={habi.id}>
@@ -31,7 +31,7 @@ export const HabilidadesTst1 = () => {
                                              
                                         </Cards>
                                 })}
-                        </ContainerDivCard>
+                       
                                         
                                         
                                        

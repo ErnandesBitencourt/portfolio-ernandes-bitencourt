@@ -131,7 +131,7 @@ export const TextIlSobreMim = styled.li`
     text-decoration: none;
     text-align: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: ${props => props.theme.corTexto};
     cursor: pointer;
     font-weight: 700;

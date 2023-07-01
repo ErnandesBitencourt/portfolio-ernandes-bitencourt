@@ -9,60 +9,34 @@ export  const  ContainerMainSobreMim = styled.main`
     justify-content:space-between;
     align-items: center;
     width: 100%;
-    max-width: 60%;
-    min-width: 490px;
+    max-width: ${props => props.theme.maxWidth};
+    min-width: ${props => props.theme.minWidth};
     flex: 1 1 ;
     height: 100%;
     max-height: 100%;
     min-height: 80%;
-   
+    gap: 3em;
 
-    border: solid 1px red;
-    
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    /* celulares */
-        width: 85%;
-       
-        
-        
-    };
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-        /* tablets */
-        width: 85%;
-       
-        
-    };
-
-
-`
+`;
 export const ContainerDivSobreMim = styled.div`
     width: 100%;
     max-width: 100%;
-    min-width: 320px;
+    min-width: ${props => props.theme.minWidth};
+    height: auto;
     display: flex;
     justify-content: left;
     align-items: center; 
-    border-radius: 10px;
-    background: none;
-   
-
-`
+    
+`;
 export const TextHSobreMim = styled.h2`
-    font-size: 1.8rem;
-    color:  #e5e5e5;
+    font-size: 1.4rem;
+    color: ${props => props.theme.corTexto};
     font-weight: 700;
-    background:none; 
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    /* celulares */
-     font-size: 1.2rem;
-        
-    };
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-        /* tablets */
-        font-size: 1.5em;
-       
-    };
-`
+    background-image: linear-gradient(transparent 0%,transparent 90% , ${props => props.theme.corSecundaria}, ${props => props.theme.corSecundaria});
+    background-repeat: no-repeat;
+    background-size: 15% 100% ;
+    
+`;
 
 export const ContainerDivTextPSobreMin = styled.div`
 
@@ -71,7 +45,7 @@ export const ContainerDivTextPSobreMin = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background:none; 
+    
     
     @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
     /* celulares */
@@ -87,7 +61,7 @@ export const ContainerDivTextPSobreMin = styled.div`
     
 `
 export const TextSobreMimDiv = styled.div`
-        width:60%;
+       width:60%;
        height: 40vh;
        background: none;
        display: flex;
@@ -110,11 +84,11 @@ export const TextSobreMimDiv = styled.div`
 
 `
 export const TextP = styled.p`
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-left: 1em;
-    color: #909090;
-    font-weight: 700;
-    background:  none; 
+    color: ${props => props.theme.corTexto};
+    font-weight: 400;
+     
     @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
     /* celulares */
     font-size: 0.9rem;
@@ -128,10 +102,10 @@ export const TextP = styled.p`
   
 `
 export const StrongP = styled.strong`
-   background-color: #380060;
+   border-bottom: solid 1px  ${props => props.theme.corHoverText};
    padding: 3px 2px 3px 2px ;
-   border-radius: 10px;
-   color:  #ffffff;
+   font-weight: 500;
+   color: ${props => props.theme.corHoverTextClaro};
    
 `
 
@@ -159,9 +133,10 @@ export const ContainerButtonDwCv = styled.div`
 `
 export const ContainerDivImgSobreMin = styled.div`
 
-     width: 25%;
+    width: 25%;
+    max-width: 25%;
+    min-width:25%;
     height: 85%;
-   
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -181,7 +156,7 @@ export const ContainerDivImgSobreMin = styled.div`
 
 `
 export const ImgSobreMin = styled.img`
-     width: 95%;
+     width: 100%;
     height: 100%;
     
    
