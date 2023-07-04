@@ -1,10 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import  {projetosRealizados} from "../../endpoints/Projetos"
-import {ContainerMainProjetos,ContainerDivH3Projetos,TextH3Projetos,Cards, ContainerCardsProjetos, ImgCarrocel,ContianerProjetos, DivNomeProjeto,TextNomeProjeto,DivImgProjeto,DivTextDetalhesProjeto,DivTextGitHubProjeto,TextDetalheProjeto,ImgGitHub} from "./StyledProjetos"
+import {ContainerMainProjetos,ContainerDivH3Projetos,TextH3Projetos,Cards, ContainerCardsProjetos, ImgCarrocel,ContianerProjetos, DivNomeProjeto,TextNomeProjeto,DivImgProjeto,DivTextDetalhesProjeto,DivTextGitHubProjeto,TextDetalheProjeto,ImgGitHub, Img} from "./StyledProjetos"
 import githubicon from "../../img/imgContatos/githubicon.png"
-// import botaoProximo from "../../img/ImgIconsVoltarEProximo/botaoProximo.png"
-// import botaoVoltar from "../../img/ImgIconsVoltarEProximo/botaoVoltar.png"
 
 
  const ProjetosTst = () => {
@@ -35,8 +33,13 @@ import githubicon from "../../img/imgContatos/githubicon.png"
 
             <ContainerCardsProjetos>
                 
-               
-                    {projetosRealizados.map((p)=>{
+            <Cards>
+            <p>Em breve</p>
+            <a target="_blank" href="https://github.com/ErnandesBitencourt">  <Img src={githubicon}/></a>
+            </Cards>
+
+                
+                    {/* {projetosRealizados.map((p)=>{
                         return(
                                 <Cards  key={p.id}>
                                    
@@ -67,7 +70,7 @@ import githubicon from "../../img/imgContatos/githubicon.png"
                                 </Cards>
                         ) 
                     })}
-            
+             */}
                 
                                                    
             </ContainerCardsProjetos>   

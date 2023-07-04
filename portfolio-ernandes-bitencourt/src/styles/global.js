@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import background from "../img/imgLogos/background.jpg"
+
 export default createGlobalStyle`
 *{
    font-family: 'Open Sans', sans-serif;

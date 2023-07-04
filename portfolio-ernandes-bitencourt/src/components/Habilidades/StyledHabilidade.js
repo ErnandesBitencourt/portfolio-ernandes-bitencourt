@@ -46,12 +46,12 @@ export const ContainerDivSkill = styled.div`
 `;
 
 export const TextHSkill = styled.h2`
-    font-size: 1.4rem;
+    font-size: ${props => props.theme.titulos};
     color: ${props => props.theme.corTexto };
     font-weight: 700;
     background-image: linear-gradient(transparent 0%,transparent 90% , ${props => props.theme.corSecundaria}, ${props => props.theme.corSecundaria});
     background-repeat: no-repeat;
-    background-size: 15% 100% ;
+    background-size: 7% 100% ;
 
     @media screen and (min-device-width :100px) and (max-device-width : 480px) {
     /* celulares */
@@ -105,14 +105,14 @@ export const ContainerCards = styled.div`
    
     justify-content: space-evenly;
     align-items: center;
-    width: 100%;
+    width: 75%;
     min-width: 350px;
     height: 100%;
     max-height: 100%;
-    gap: 0.1em;
     flex-wrap: wrap;
     box-sizing: border-box;
-    
+    gap: 0.1em;
+   
     
 `;
 
@@ -146,12 +146,13 @@ export const Cards = styled.div`
 
         :hover{        
             p{
-                background-size: 100% 100%;
+            background-size: 100% 100%;
             background-position-x: left;
             color: ${props => props.theme.corHoverTextClaro};
             background-image: linear-gradient(transparent 0%,transparent 90% , ${props => props.theme.corHoverText}, ${props => props.theme.corHoverText});
             transition: 0.5s;  
             }
+            
         };
         
 

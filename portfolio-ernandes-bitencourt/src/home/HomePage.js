@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect,useState } from "react";
-import { ContainerGeral,Img,ContianerButtomTop,ContainerHeader,ContainerGeralProjetos,ContainerGeralMainSobreMim,ContainerGeralSkill,ContainerGeralContatos,ContainerGeralFooter,ContainerGeralLoadingPage} from "./StyledHomePage";
+import { ContainerGeral,ContianerButtomTop,ContainerHeader,ContainerGeralProjetos,ContainerGeralMainSobreMim,ContainerGeralSkill,ContainerGeralContatos,ContainerGeralFooter,ContainerGeralLoadingPage} from "./StyledHomePage";
 import { useRef } from "react";
 import {SobreMim} from "../components/SobreMim/SobreMim"
 import {HabilidadesTst1} from "../components/Habilidades/HabilidadesTst"
@@ -10,7 +10,6 @@ import {Footer} from "../components/Footer/Footer"
 import iconPraCima from "../img/imgLogos/iconPraCima.png"
 import {LoadingPage} from "../components/loadingPage/LoadingPage"
 import TelaDecarregamento from "../components/loadingPage/TelaDecarregamento"
-import githubicon from "../img/imgContatos/githubicon.png"
 import { Navegador } from "../components/Nav/Navegador";
 import { ScrollTop } from "../endpoints/ScrollTop";
 
@@ -73,7 +72,6 @@ export  const HomePage = () => {
                       
             <ContainerGeralProjetos ref={projetos} id="projetos" >
                 <ProjetosTst />
-                <a target="_blank" href="https://github.com/ErnandesBitencourt">  <Img src={githubicon}/></a>
             </ContainerGeralProjetos>       
             <ContainerGeralContatos  ref={contatos} id="contatos"> 
                 <Contatos />

@@ -5,12 +5,13 @@ export const ContainerMainProjetos = styled.main`
     display: flex;
     flex-direction: column;
     justify-content:space-between;
-    gap: 5vh;
     align-items: center;
-    width: 1000px;
-    padding-bottom: 5vh;
+    width:100%;
+    max-width: ${props => props.theme.maxWidth};
+    min-width: ${props => props.theme.minWidth};
     
-   
+    
+
 
     @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
     /* celulares */
@@ -26,43 +27,21 @@ export const ContainerMainProjetos = styled.main`
 
 export const ContainerDivH3Projetos = styled.div`
     width: 100%;
-    height: 4vh;
+    min-width: ${props => props.theme.minWidth};
+    height: auto;
     display: flex;
     justify-content:left;
     align-items: center; 
-    border-radius: 10px;
-    background: none;
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    /* celulares */
-
-        width: 100%;
-
-        justify-content: left;
-
-    };
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-        /* tablets */
-      
-       width:100% ;
-      justify-content: left;
-      
-    };
-`
+   
+`;
 export const TextH3Projetos = styled.h2`
-    font-size: 1.8rem;
-    color:  #e5e5e5;
+    font-size:${props => props.theme.titulos};
+    color:  ${props => props.theme.corTexto};
     font-weight: 700;
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    /* celulares */
-        font-size: 1.2em;
-       
-    };
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-        /* tablets */
-      font-size: 1.5em;
-        
-    };
-`
+    background-image: linear-gradient(transparent 0%,transparent 90% , ${props => props.theme.corSecundaria}, ${props => props.theme.corSecundaria});
+    background-repeat: no-repeat;
+    background-size: 15% 100% ;
+`;
 
 export const ContainerCardsProjetos = styled.div`
     
@@ -70,33 +49,9 @@ export const ContainerCardsProjetos = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    border-radius:20px;
-     width:100%; 
-     gap: 10px;
-    
-    /* overflow-y: auto;
-    overflow-x :hidden; */
-    background: none;
-
-   
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    /* celulares */
-        position: static;
-        width:90%; 
-        height: 75% ;
-       
-    };
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-        /* tablets */
-      position: static;
-      width:75%; 
-      height: 85% ;
-      align-items: center;
-      justify-content: center;
-    };
-
-
-`
+    width:100%; 
+ 
+`;
 
 
 
@@ -105,23 +60,8 @@ export const ImgCarrocel = styled.img`
     width: 95%;
    height: 90%;
     border: none;
-    border-radius: 10px;
-    background: none;
 
-
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    /* celulares */
-    width: 95%;
-    };
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-        /* tablets */
-      
-        width: 90%;
-    };
-  
-
-
-`
+`;
 
 export const ContianerProjetos = styled.div`
     width: 100%;
@@ -130,12 +70,8 @@ export const ContianerProjetos = styled.div`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-   
-   
-    
-    
-    
-`
+
+`;
 
 
 
@@ -257,33 +193,51 @@ export const DivTextGitHubProjeto = styled.div`
 
 
 export const Cards = styled.div`
-  height: 350px;
-    width: 230px;
+margin-top: 3em;
+  height: 18em;
+    width:100%;
+    max-width: 18em;
+    min-width: 15em;
   display : flex;
   flex-direction: column;
   align-items: center;
-  flex: 1 1 230px;
-  background-color:#0b0a17  ;
-  border: solid 3px #380060;
+  justify-content: center;
+  border: solid 3px ${props => props.theme.corPrincipal};
   border-radius: 10px;
-  padding: 3px;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  text-align: center;
+  gap: 2em;
+    p{
+        font-size: 1em;
+        color: ${props => props.theme.corTexto};
+        font-weight: 700;
+        background-image: linear-gradient(transparent 0%,transparent 90% , ${props => props.theme.corSecundaria}, ${props => props.theme.corSecundaria});
+        background-repeat: no-repeat;
+        background-size: 15% 100% ;
+        background-position-x: left;
+        transition: background-size 300ms;
     
+    }
 
-   
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    /* celulares */
-        height: 300px;
-        /* width: 150px; */
-    
-        flex: 1 1 170px;
-    };
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-        /* tablets */
-        height: 350px;  
-        /* width: 100px; */
-        flex: 1 1 200px;
-     
-    };
+    a{
+        width: 2.2em;
+        height: auto;
+        border-bottom: solid 2px ${props => props.theme. corSecundaria};
+    }
+    :hover{
+      p{
+        background-size: 100% 100%;
+        background-position-x: left;
+        color: ${props => props.theme.corHoverTextClaro};
+        background-image: linear-gradient(transparent 0%,transparent 90% , ${props => props.theme.corHoverText}, ${props => props.theme.corHoverText});
+        transition: 0.5s;
+        }
+      
+    }
 
-`
-
+`;
+export const Img = styled.img`
+    width: 100%;
+    height: auto;
+`;

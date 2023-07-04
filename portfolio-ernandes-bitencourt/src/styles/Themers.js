@@ -10,4 +10,5 @@ export const Colors =  {
     maxWidth: "1150px",
     minWidth: "490px",
     maxWidthHeader: "65%",
+    titulos: "1.3rem"
 }

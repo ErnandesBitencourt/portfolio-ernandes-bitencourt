@@ -21,20 +21,13 @@ export const HabilidadesTst1 = () => {
                     </ContainerDivImgHabilidades>  
 
                     <ContainerCards>
-
-                       
-
                              {frontende1.map((habi)=>{
                                return <Cards  key={habi.id}>
                                          <TextCardsP> {habi.nome}</TextCardsP>
                                         <img src={habi.foto}/>
                                              
                                         </Cards>
-                                })}
-                       
-                                        
-                                        
-                                       
+                                })}                
                      </ContainerCards>
                                 
               </ContainerGeralFrontEnd> 

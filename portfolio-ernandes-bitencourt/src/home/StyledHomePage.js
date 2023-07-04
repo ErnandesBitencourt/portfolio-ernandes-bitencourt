@@ -179,44 +179,10 @@ export  const  ContainerGeralProjetos = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    
-    padding-top: 15vh;
-    padding-bottom:10vh;
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    /* celulares */
-     padding: 12vh 0 4vh 0;
-        
-    };
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-        /* tablets */
-        padding: 15vh 0 6vh 0 ;
-       
-    };
-   a{   
-        width: 100px;
-        height: auto;
-        background:none;
-        text-decoration: none;
-        text-align: center;
-        padding-bottom: 5px;
-        border-bottom: 1px solid #380060;
-        :hover{
-        border-bottom: solid 1px #e5e5e5 ;
-         }
-   }
+    padding-top: 10em;
+    padding-bottom: 5em;
+`;
 
-`
-export const Img = styled.img`
-    background:none;
-    width: 50%;
-    height: auto;
-    :hover{
-        border: none;
-        border-radius: 50%;
-        background-color:#e5e5e5;
-     }
-    
-`
 
 
 
@@ -225,13 +191,14 @@ export const Img = styled.img`
 
 
 export  const  ContainerGeralContatos = styled.div`
-    padding-top: 13vh;
+    padding-top: 10vh;
     padding-bottom: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 65vh;
+    height: 35em;
+    border: solid 1px red;
    
     @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
     /* celulares */

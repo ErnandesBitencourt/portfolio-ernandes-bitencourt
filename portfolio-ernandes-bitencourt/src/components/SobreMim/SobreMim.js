@@ -5,11 +5,6 @@ import { TextoSobreMin } from "../../endpoints/TextoSobreMin";
 // import { Link } from "react-router-dom";
 // import {curriculoErnandesBitencourt} from "../../curriculo/curriculoErnandesBitencourt.pdf"
 // import {linkStyle} from "../loadingPage/LoadingPage"
-
-
-
-
-
 export const SobreMim = () => {
 
     return(

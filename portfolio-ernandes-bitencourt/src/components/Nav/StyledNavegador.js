@@ -140,9 +140,6 @@ export const TextIlSobreMim = styled.li`
     background-size: 15% 100% ;
     background-position-x: left;
     transition: background-size 300ms;
-    
-  
-
     :hover{
         
         background-size: 100% 100%;

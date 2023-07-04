@@ -29,7 +29,7 @@ export const ContainerDivSobreMim = styled.div`
     
 `;
 export const TextHSobreMim = styled.h2`
-    font-size: 1.4rem;
+    font-size: ${props => props.theme.titulos};
     color: ${props => props.theme.corTexto};
     font-weight: 700;
     background-image: linear-gradient(transparent 0%,transparent 90% , ${props => props.theme.corSecundaria}, ${props => props.theme.corSecundaria});
@@ -133,10 +133,10 @@ export const ContainerButtonDwCv = styled.div`
 `
 export const ContainerDivImgSobreMin = styled.div`
 
-    width: 25%;
-    max-width: 25%;
-    min-width:25%;
-    height: 85%;
+    width: 20%;
+    max-width: 20%;
+    min-width:20%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;

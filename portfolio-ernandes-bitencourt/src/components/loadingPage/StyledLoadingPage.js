@@ -404,7 +404,7 @@ export const ContaineFooter= styled.footer`
     display: flex;
     gap: 20px;
     margin-top: 25px;
-    border-bottom: 1px solid ${props => props.theme.corHoverTextClaro} ;
+    border-bottom: solid 2px ${props => props.theme. corSecundaria};
  
 
 `;
