@@ -10,16 +10,28 @@ export const ContainerNavHeader = styled.nav`
     justify-content:space-between;
     align-items: center; 
    background-color: ${props => props.theme.corFundo};
-   
-   
+
+   @media only screen and (max-device-width: 1000px) {
+        
+    max-width:${props => props.theme.maxWidthHeaderResposive};     
+
+}; 
+
+@media only screen and (max-device-width: 600px) {
+        
+        max-width:${props => props.theme.maxWidthHeaderResposiveC};    
+        min-width: ${props => props.theme.minWidthResponsiveC};
+         
+        
+ }; 
 
 `
 export const ContainerImgLogoHeader = styled.div`
     display: flex;
     
     justify-content: center;
-    width: 17em;
-    max-width: 12em;
+    width: 15em;
+    max-width: 10em;
     min-width: 9em;
      height: auto;
     cursor: pointer;
@@ -27,46 +39,30 @@ export const ContainerImgLogoHeader = styled.div`
     background-color: ${props => props.theme.corFundo};
     padding-bottom: 6px;
     
-
-    /* @media screen and (min-device-width : 481px) and (max-device-width : 999px) { 
-
-        height: 100%;
-        width: 80px;
-        border-bottom: none;
-
-    }
-
-
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-        height: 100%;
-        width: 80px;
-        border-bottom: none;
+@media only screen and (max-device-width: 320px) {
         
-
-    } */
+        max-width: 9em;
+        min-width: 4em;
+        
+};
+@media only screen and (max-device-width: 600px) {
+        
+        max-width: 9em;
+        min-width: 4em;
+      
+};
+@media only screen and (max-device-width: 1000px) {
+        
+        max-width: 10em;
+        min-width: 4em;
+      
+};   
 `;
 export const ImgLogoHeader = styled.img`
     margin-top: 3px;
     width: 100%;
-    
     height: 100%;
-    cursor: pointer;
     
-    
-    /* @media screen and (min-device-width : 481px) and (max-device-width : 999px) { 
-
-        height: 100%;
-        width: 100%;
-        border-bottom: none;
-
-    };
-
-
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-        height: 100%;
-        width: 100%;
-        
-    }; */
 `
 export const UlNavHeader = styled.ul`
     display: flex;
@@ -76,15 +72,9 @@ export const UlNavHeader = styled.ul`
     max-width: 55%;
     min-width:300px;
     height:100%;
+    
 
-    
-    
-    
-    span{
-        background:none;
-    }
-
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) { 
+    @media only screen and (max-device-width: 320px) { 
 
     display: ${({ativadoRes})=> ativadoRes ? 'flex' :'none'};
     gap: 30px;
@@ -104,7 +94,7 @@ export const UlNavHeader = styled.ul`
 
     }
 
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
+    @media only screen and (max-device-width: 600px) {
             /* celulares */
 
         display: ${({ativadoRes})=> ativadoRes ? 'flex' :'none'};
@@ -119,7 +109,23 @@ export const UlNavHeader = styled.ul`
         top: 0;
         right: 0;
         
+        
+    }
+    @media only screen and (max-device-width: 1000px) {
+            /* celulares */
 
+        display: ${({ativadoRes})=> ativadoRes ? 'flex' :'none'};
+        gap: 30px;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        height: 25em;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        
         
     }
    

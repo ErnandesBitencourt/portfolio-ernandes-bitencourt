@@ -270,7 +270,7 @@ export const ContainerHello =styled.div`
     justify-content: center;
     align-items: center;
     width: 65%;
-    height: auto
+    height: auto;
 
     /* @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
     
@@ -404,20 +404,15 @@ export const ContaineFooter= styled.footer`
     display: flex;
     gap: 20px;
     margin-top: 25px;
-    border-bottom: solid 2px ${props => props.theme. corSecundaria};
- 
-
+    border-bottom: solid 2px ${props => props.theme.corSecundaria};
 `;
 
 export const FooterAnimetion = styled.div`
 
 animation: float 5s ease-in-out infinite;
 display: flex;
-    
-    gap: 20px;
-    margin-top: 15px;
-        
-       
+gap: 20px; 
+margin-top: 15px;
 
 @keyframes float  {
 0%{
@@ -432,8 +427,6 @@ display: flex;
     transform: translateY(0);
 }
 }
-
-
 
 `;
 

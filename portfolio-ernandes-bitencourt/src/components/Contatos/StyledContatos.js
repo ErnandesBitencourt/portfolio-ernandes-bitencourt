@@ -9,8 +9,6 @@ export const ContainerMainContatos = styled.main`
     max-width: ${props => props.theme.maxWidth};
     min-width: ${props => props.theme.minWidth};
     height: 100%;
-    border: solid 1px red; 
-
 `;
 export const ContainerDivH3Contatos = styled.div`
     width: 100%;
@@ -26,42 +24,46 @@ export const TextH2Contatos = styled.h2`
     font-weight: 700;
     background-image: linear-gradient(transparent 0%,transparent 90% , ${props => props.theme.corSecundaria}, ${props => props.theme.corSecundaria});
     background-repeat: no-repeat;
-    background-size: 20% 100% 
+    background-size: 20% 100%;
 `;
 export const ContainerIcons =styled.div`
     width: 100%;
     height: 8vh;
     display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    animation: float 5s ease-in-out infinite;
+   
+
+@keyframes float  {
+0%{
+    transform: translateY(0);
+
+}
+50% {
+    transform: translateY(-20px);
+
+}
+100% {
+    transform: translateY(0);
+}
+};   
         a{
             text-decoration: none;
-        }
+        };
     img{
         
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         :hover{
-            background-color:#e5e5e5 ;
+            background-color: ${props => props.theme.corTexto} ;
             border: none;
             border-radius: 50%;
-        }
+        };
 
-        @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    /* celulares */
-        width: 30px;
-        height: 30px;
-    
-         
+   
     };
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-        /* tablets */
-        
-        width: 45px;
-        height: 45px;
-    };
-    }
 
 `
 

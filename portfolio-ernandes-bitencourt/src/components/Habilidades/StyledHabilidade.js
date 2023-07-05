@@ -126,7 +126,7 @@ export const Cards = styled.div`
     row-gap: 2em;
     max-width: 25%;
     height: 22vh;
-    max-height: 22vh;
+    max-height: 21vh;
     min-height: 20vh;
     padding-top: 5px ;
     padding-bottom: 5px;

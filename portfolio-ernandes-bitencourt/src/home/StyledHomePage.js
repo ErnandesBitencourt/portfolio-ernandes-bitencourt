@@ -197,20 +197,7 @@ export  const  ContainerGeralContatos = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 35em;
-    border: solid 1px red;
-   
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    /* celulares */
-     padding: 12vh 0 0 0;
-        
-    };
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-        /* tablets */
-        padding: 15vh 0 2vh 0 ;
-       
-    };
-   
+    height: 8em;
     
 `
 
@@ -250,20 +237,12 @@ export  const  ContainerGeralFormacao = styled.div`
 export  const  ContainerGeralFooter = styled.footer`
     
     width: 100%;
+    min-width: ${props => props.theme.minWidth};
     display: flex;
     justify-content: center;
     align-items: center;
     height: 10vh;
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    /* celulares */
-     padding: 5vh 0 0 0;
-        
-    };
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-        /* tablets */
-        padding: 8vh 0 6vh 0 ;
-       
-    };
+
    
     
     

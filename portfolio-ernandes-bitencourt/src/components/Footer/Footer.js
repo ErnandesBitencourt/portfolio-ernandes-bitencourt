@@ -1,19 +1,15 @@
 import React from "react";
-
-
-import {ContainerFooter,DivText,Divimg,Img,P  } from "./StyledFooter"
+import {ContainerFooter,P  } from "./StyledFooter"
 
 export const Footer = () =>{
 
     return(
         
         <ContainerFooter>
-            <DivText>
-                <P> © 2022 ernandes.com</P> 
-            </DivText>
-            {/* <Divimg>
-                <Img  src={ImgFooter} alt="Imagem logo"/>
-            </Divimg> */}
+            
+                <P> © 2023 ernandes.com</P> 
+            
+           
         </ContainerFooter>
     )
 }
