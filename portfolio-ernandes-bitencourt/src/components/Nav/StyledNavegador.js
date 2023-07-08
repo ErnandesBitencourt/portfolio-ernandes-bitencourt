@@ -21,8 +21,7 @@ export const ContainerNavHeader = styled.nav`
         
         max-width:${props => props.theme.maxWidthHeaderResposiveC};    
         min-width: ${props => props.theme.minWidthResponsiveC};
-         
-        
+   
  }; 
 
 `
@@ -72,42 +71,22 @@ export const UlNavHeader = styled.ul`
     max-width: 55%;
     min-width:300px;
     height:100%;
-    
-
-    @media only screen and (max-device-width: 320px) { 
-
-    display: ${({ativadoRes})=> ativadoRes ? 'flex' :'none'};
-    gap: 30px;
-    flex-direction: column;
-    justify-content: center;
-    background: ${props => props.theme.corFundo};
-    transform: ${({ativadoRes }) => (ativadoRes ? "translateX(0)" : "translateX(-100%)")};
-     height: 60vh;
-     width: 30%;
-     text-align: center;
-     padding: 1.5rem;
-     position: absolute;
-     top: 0;
-     right: 0;
-     transition: transform 0.3s ease-in-out;
-     border: solid 1px ${props => props.theme.corPrincipal};
-
-    }
+    box-sizing: border-box;
 
     @media only screen and (max-device-width: 600px) {
             /* celulares */
-
         display: ${({ativadoRes})=> ativadoRes ? 'flex' :'none'};
+        max-width: 100%;
+        min-height: 100ch;
         gap: 30px;
         flex-direction: column;
         justify-content: center;
         align-items:center;
-        height: 100vh;
-        width: 100%;
         text-align: center;
         position: absolute;
         top: 0;
         right: 0;
+        background-color: ${props => props.theme.corFundo};
         
         
     }
@@ -118,19 +97,20 @@ export const UlNavHeader = styled.ul`
         gap: 30px;
         flex-direction: column;
         justify-content: center;
-        align-items:center;
+        align-items:  center;
         height: 25em;
-        width: 100%;
+        min-width:10%;
         text-align: center;
         position: absolute;
         top: 0;
         right: 0;
         
         
+        box-sizing: border-box;
     }
    
    
-`
+`;
 export const TextIlSobreMim = styled.li`
 
     list-style-type: none;
@@ -155,9 +135,9 @@ export const TextIlSobreMim = styled.li`
         transition: 0.5s;
         
         
-    }
+    };
 
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
+    @media only screen and (max-device-width: 1000px)  {
             /* tablets */
             
 
@@ -167,29 +147,18 @@ export const TextIlSobreMim = styled.li`
             border-bottom: none;
             font-size: 0.8em;
 
-    }
+    };
 
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
+    @media only screen and (max-device-width: 500px)  {
         /* celulares */
             display: flex;
             flex-direction: column;
-            
-            height: 5vh;
+            height: auto;
             border-bottom: none;
             padding-top: 10px;
             padding-bottom: 0;
-            font-size: 0.8em;
-            span{
-                width: 100%;
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                
-            }
-        
-   }
+            font-size: 1em;   
+   };
    
     
 `
@@ -207,11 +176,11 @@ export const HamburgeContaine1 = styled.div`
     @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
             position:fixed;
             top: 4%;
-            right: 2rem;
+            right: 0;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            width: 2rem;
+            width: 6rem;
             height: 2rem;
             background: transparent;
             border: none;
@@ -249,7 +218,7 @@ export const HamburgeContaine1 = styled.div`
             }
 
 
-            @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
+            @media screen and (min-device-width : 100px) and (max-device-width : 600px) {
                 /* celulares */
 
             position:fixed;

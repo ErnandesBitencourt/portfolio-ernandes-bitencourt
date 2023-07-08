@@ -8,7 +8,7 @@ export const Colors =  {
     corSecundaria:"#9545CD",
     corImg: "#009600",
     maxWidth: "60%",
-    minWidth: "490px",
+    minWidth: "390px",
     maxWidthHeader: "65%",
     maxWidthHeaderResposive: "85%",
     maxWidthHeaderResposiveT: "20%",

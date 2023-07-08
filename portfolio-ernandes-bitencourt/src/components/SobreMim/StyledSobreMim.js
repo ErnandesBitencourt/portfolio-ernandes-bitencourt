@@ -133,10 +133,10 @@ export const ContainerButtonDwCv = styled.div`
 `
 export const ContainerDivImgSobreMin = styled.div`
 
-    width: 20%;
-    max-width: 20%;
+    width: 50%;
+    max-width: 35%;
     min-width:20%;
-    height: 80%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;

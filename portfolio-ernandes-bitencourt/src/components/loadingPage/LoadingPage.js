@@ -7,12 +7,7 @@ import ernandeslilasscreen from "../../img/imgLogos/ernandeslilasscreen.gif"
 // import curriculoErnandesBitencourt from "../../curriculo/curriculoErnandesBitencourt.pdf"
 
 
-export const linkStyle = {
-        
-    textDecoration: "none",
-    background:"#380060",
-    color: '#e5e5e5'
-  };
+
 
 export const LoadingPage = () => {
     

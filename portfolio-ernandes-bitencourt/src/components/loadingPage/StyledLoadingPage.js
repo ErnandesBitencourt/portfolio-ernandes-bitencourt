@@ -12,24 +12,11 @@ export const ContainerGeralLog = styled.div`
     justify-content: center;
     align-items: center;
     gap: 15px;
-
     background-color: ${props => props.theme.corFundo};
     
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    /* celulares */
-     
-        width: 100%;
-    };
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-        /* tablets */
-       
-        width:  85%;
-    };
-
 `;
 export const Container = styled.div`
     display: flex;
-    font-family: monospace;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -41,18 +28,16 @@ export const Container = styled.div`
     max-height: 100%;
     flex: 1 1 ;
     
-    /* @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
+    @media only screen and (max-device-width: 600px)  {
    
         
-        width:95%;
+        max-width:100%;
     };
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-       
-        
-        width:  55vh;
+    @media only screen and (max-device-width: 1000px)  {
+        max-width: 100%;
+    
     };
-     */
-
+    
 `;
 export const ContainerSegundarios = styled.div`
 
@@ -66,17 +51,16 @@ export const ContainerSegundarios = styled.div`
     box-sizing: border-box;
     flex: 1 1 ;
 
-    /* @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
+    @media only screen and (max-device-width: 600px) {
+        white-space: normal;
+
+       
+    };
+    @media only screen and (max-device-width: 1000px) {
+        white-space: normal;
+        
+    };
     
-        
-        width:95%;
-    };
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-        
-        
-        width:  55vh;
-    };
-     */
 `;
 
 export const ContainerLogo2 = styled.div`
@@ -93,17 +77,13 @@ export const ContainerLogo2 = styled.div`
     
     
     border-radius: 10px;
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-        /* celulares */
-        display: none;
-
-    }
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
+   
+    @media only screen and (max-device-width:  1000px) {
         /* tablets */
         display: none;
-    }       
+    }      
 
-`
+`;
 
 export const ContainerImgLogo = styled.div`
 
@@ -128,8 +108,14 @@ export const ContainerHeader = styled.header`
     align-items: center;
     width: 100%;
     height:50%;
-  
-    
+   
+    @media only screen and (max-device-width: 600px) {
+        /* celulares */
+        height:40%;
+        justify-content: center;
+
+    }
+
 
 `
 
@@ -228,39 +214,20 @@ export const HoverButton = styled.p`
     align-items: center;
     width: 100%;
     height: auto;
-    /* @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-   
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 7vh;
-        
-    }
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-      
-        
-        width: 100%;
-        height: 7vh;
-    } */
-
+  
  `;
 
 export const NomeH3 = styled.h3`
     text-align:center;
     font-size:  1.5em;
-    
     color: ${props => props.theme.corTexto};
    
 
-    /* @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    
-        font-size: 1.6em;
-    }
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
+   
+    @media only screen and (max-device-width: 1000px) {
        
-        font-size: 2em;
-    } */
+        font-size: 1.8em;
+    }
 
     
 `;
@@ -269,26 +236,8 @@ export const ContainerHello =styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 65%;
+    width: 100%;
     height: auto;
-
-    /* @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width:100%;
-        height: 5vh;
-    }
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-        
-    
-        width:  100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    } */
-  
 `
 
 export const NomeHello = styled.h1`
@@ -296,17 +245,6 @@ export const NomeHello = styled.h1`
     font-size: 1.5em;
     color: ${props => props.theme.corTexto};
  
-
-    /* @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    
-        font-size: 1.5em;
-       
-    }
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-       
-        font-size: 1.6em;
-} */
-
 
 `;
 export const ContainerIm =styled.div`
@@ -316,34 +254,10 @@ export const ContainerIm =styled.div`
     align-items: center;
     width: 100%;
     height: auto;
-    /* @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width:100%;
-        height: 5vh;
-    }
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-     
-        width:  100%;
-} */
-   
 `;
 export const TextIm = styled.h2`
     font-size:  1.5em;
     color: ${props => props.theme.corTexto};
-
-    /* @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    
-       font-size: 1.6em;
-    }
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-       
-        font-size: 1.8em;
-    } */
-
-
 `;
 
 export const ContainerTextp =styled.div`
@@ -351,15 +265,12 @@ export const ContainerTextp =styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 51%;
+    width: 18em;
     height: auto;
     box-sizing: border-box;
     word-wrap: normal;
-  
-   
-  
-   
-`
+
+`;
 
 export const Textp = styled.p`
 
@@ -370,8 +281,8 @@ export const Textp = styled.p`
     animation: typeTextp 4s steps(40) 1s normal both;
     background-image: linear-gradient(transparent 0%,transparent 90% , ${props => props.theme.corSecundaria}, ${props => props.theme.corSecundaria});
     background-repeat: no-repeat;
-    background-size: 8% 100% ;
-    word-wrap: normal;
+    background-size: 8% 100%  ;
+    
   
 
     @keyframes typeTextp {

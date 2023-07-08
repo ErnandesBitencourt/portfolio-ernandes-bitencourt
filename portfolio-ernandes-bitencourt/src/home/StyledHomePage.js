@@ -9,13 +9,10 @@ export const ContainerGeral = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    overflow-x:none;
     background-color: ${props => props.theme.corFundo};
 
-
 `;
-
-
 
 //----------------------Container Header -------------------------------//
 
@@ -33,11 +30,7 @@ export const ContainerHeader = styled.header`
     position: fixed;
     top: 0;
     z-index: 4;
-    background-color: ${props => props.theme.corFundo};
-   
-    
-
-        
+    background-color: ${props => props.theme.corFundo};      
 `;
 
 
@@ -57,7 +50,12 @@ export const ContainerHeader = styled.header`
     padding-top: 10vh;
     padding-bottom: 10vh;
     box-sizing: border-box;
-   
+    @media only screen and (max-device-width: 600px) {
+        /* celulares */
+        box-sizing: content-box;
+        padding-bottom: 1em;
+        padding-top: 2em;
+    }
  `;
 
 
@@ -66,7 +64,6 @@ export const ContainerHeader = styled.header`
 
 export  const  ContainerGeralMainSobreMim = styled.div`
     padding-top: 14vh;
-    
     display: flex;
     justify-content: center;
     align-items: center;

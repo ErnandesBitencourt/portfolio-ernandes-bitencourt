@@ -1,6 +1,6 @@
 import React from "react";
 import {TextSobreMimDiv, ContainerMainSobreMim,ContainerDivSobreMim , TextHSobreMim, ContainerDivTextPSobreMin,ContainerButtonDwCv,ContainerDivImgSobreMin,ImgSobreMin,ButtonDwCvA } from "./StyledSobreMim"
-import AvatarSobremim from "../../img/imgSobreMim/AvatarSobremim.png"
+import sobreminScreen from "../../img/imgSobreMim/sobreminScreen.png"
 import { TextoSobreMin } from "../../endpoints/TextoSobreMin";
 // import { Link } from "react-router-dom";
 // import {curriculoErnandesBitencourt} from "../../curriculo/curriculoErnandesBitencourt.pdf"
@@ -19,7 +19,7 @@ export const SobreMim = () => {
                 <ContainerDivTextPSobreMin >
 
                     <ContainerDivImgSobreMin  >
-                        <ImgSobreMin src= {AvatarSobremim} />
+                        <ImgSobreMin src= {sobreminScreen} />
                     </ContainerDivImgSobreMin>
 
                     <TextSobreMimDiv>
