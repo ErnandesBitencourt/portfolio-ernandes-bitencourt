@@ -51,16 +51,6 @@ export const ContainerSegundarios = styled.div`
     box-sizing: border-box;
     flex: 1 1 ;
 
-    @media only screen and (max-device-width: 600px) {
-        white-space: normal;
-
-       
-    };
-    @media only screen and (max-device-width: 1000px) {
-        white-space: normal;
-        
-    };
-    
 `;
 
 export const ContainerLogo2 = styled.div`

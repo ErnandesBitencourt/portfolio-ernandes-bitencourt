@@ -29,17 +29,17 @@ export const frontende1 = [
 
 
     {
-        id: 1,
+        id: 4,
         nome: "React",
         foto: react1
     },
     {
-        id: 2,
+        id: 5,
         nome: "Styled components",
         foto: styledComponents
     },
     {
-        id: 3,
+        id: 6,
         nome: "Typescript",
         foto: typescipt2
     }

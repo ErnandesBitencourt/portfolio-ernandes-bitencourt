@@ -9,21 +9,8 @@ export const ContainerMainProjetos = styled.main`
     width:100%;
     max-width: ${props => props.theme.maxWidth};
     min-width: ${props => props.theme.minWidth};
-    
-    
 
-
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    /* celulares */
-    width: 85%;
-         
-    };
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-        /* tablets */
-        width: 85%;   
-    };
-
-`
+`;
 
 export const ContainerDivH3Projetos = styled.div`
     width: 100%;
@@ -31,7 +18,15 @@ export const ContainerDivH3Projetos = styled.div`
     height: auto;
     display: flex;
     justify-content:left;
-    align-items: center; 
+    align-items: center;  
+     @media screen and (max-device-width : 600px) {
+    /* celulares */
+        
+       justify-content: center;
+        
+    };
+   
+
    
 `;
 export const TextH3Projetos = styled.h2`
@@ -50,6 +45,16 @@ export const ContainerCardsProjetos = styled.div`
     justify-content: center;
     align-items: center;
     width:100%; 
+    @media screen and (max-device-width : 600px) {
+    /* celulares */
+        
+        margin-top: 3em;
+        
+    };
+    @media screen and (max-device-width : 1000px) {
+        margin-top: 3em;
+    };
+
  
 `;
 
@@ -223,14 +228,14 @@ margin-top: 3em;
     a{
         width: 2.2em;
         height: auto;
-        border-bottom: solid 2px ${props => props.theme. corSecundaria};
+        border-bottom: solid 2px ${props => props.theme.corSecundaria};
     }
     :hover{
       p{
         background-size: 100% 100%;
         background-position-x: left;
         color: ${props => props.theme.corHoverTextClaro};
-        background-image: linear-gradient(transparent 0%,transparent 90% , ${props => props.theme.corHoverText}, ${props => props.theme.corHoverText});
+        background-image: linear-gradient(transparent 0%,transparent 90%,${props => props.theme.corHoverText}, ${props => props.theme.corHoverText});
         transition: 0.5s;
         }
       

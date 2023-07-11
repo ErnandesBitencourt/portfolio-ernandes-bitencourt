@@ -26,7 +26,11 @@ export const ContainerDivSobreMim = styled.div`
     display: flex;
     justify-content: left;
     align-items: center; 
-    
+    @media screen and (max-device-width : 600px) {
+    /* celulares */   
+    justify-content: center;
+        
+    };
 `;
 export const TextHSobreMim = styled.h2`
     font-size: ${props => props.theme.titulos};
@@ -44,41 +48,23 @@ export const ContainerDivTextPSobreMin = styled.div`
     height: 32vh;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    
-    
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    /* celulares */
-        
-       justify-content: left;
-       
-        
-    };
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-     
-    };
-
-    
-`
+    align-items: center; 
+`;
 export const TextSobreMimDiv = styled.div`
        width:60%;
-       height: 40vh;
+       
        background: none;
        display: flex;
        justify-content: center;
        align-items: center;
-       @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
+       @media screen and (max-device-width : 600px) {
     /* celulares */
        width:100%;
-       height: 20vh;
-       justify-content: left;
  
     };
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
+    @media screen and  (max-device-width : 1000px) {
         /* tablets */
-      width:100%;
-       height: 30vh;
-       justify-content: left;
+        width:100%;
         
     };
 
@@ -89,14 +75,14 @@ export const TextP = styled.p`
     color: ${props => props.theme.corTexto};
     font-weight: 400;
      
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
+    @media screen and  (max-device-width : 600px) {
     /* celulares */
-    font-size: 0.9rem;
+    font-size: 0.8rem;
         
     }
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
+    @media screen and (max-device-width : 1000px) {
         /* tablets */
-        font-size: 1.2em;
+        font-size: 1em;
        
     }
   

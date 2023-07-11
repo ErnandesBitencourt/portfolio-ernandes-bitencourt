@@ -8,7 +8,7 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
 
-  
+    background-color: ${props => props.theme.corFundo};
 
 
     
@@ -37,19 +37,21 @@ export const Container = styled.div`
 
 export const LogoPretoImg = styled.img`
 
-    width: 20%;
-    height: 25%;
+    width: 50%;
+    max-width: 20%;
+    height: 35%;
 
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
+    @media screen and (min-device-width : 100px) and (max-device-width : 600px) {
     /* celulares */
       width: 30vw;
+      max-width: 30%;
       height: 20vh;
     };
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
+    @media screen and (min-device-width : 600px) and (max-device-width : 1000px) {
         /* tablets */
        
-        width: 18vw;
-        height: 23vh;
+        width: 25%;
+        height: 25%;
     };
 
 `

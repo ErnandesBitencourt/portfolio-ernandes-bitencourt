@@ -75,7 +75,7 @@ export const UlNavHeader = styled.ul`
 
     @media only screen and (max-device-width: 600px) {
             /* celulares */
-        display: ${({ativadoRes})=> ativadoRes ? 'flex' :'none'};
+        display: ${({ativadores})=> ativadores ? 'flex' :'none'};
         max-width: 100%;
         min-height: 100ch;
         gap: 30px;
@@ -93,22 +93,25 @@ export const UlNavHeader = styled.ul`
     @media only screen and (max-device-width: 1000px) {
             /* celulares */
 
-        display: ${({ativadoRes})=> ativadoRes ? 'flex' :'none'};
+        display: ${({ativadores})=> ativadores ? 'flex' :'none'};
         gap: 30px;
         flex-direction: column;
         justify-content: center;
-        align-items:  center;
+        align-items:  flex-end;
         height: 25em;
-        min-width:10%;
         text-align: center;
         position: absolute;
         top: 0;
         right: 0;
-        
-        
         box-sizing: border-box;
     }
    
+    @media only screen and (max-device-width: 600px) {
+            /* celulares */
+
+        align-items:  center;
+       
+    }
    
 `;
 export const TextIlSobreMim = styled.li`
@@ -146,10 +149,11 @@ export const TextIlSobreMim = styled.li`
             align-items: center;
             border-bottom: none;
             font-size: 0.8em;
+            margin-right: 5em;
 
     };
 
-    @media only screen and (max-device-width: 500px)  {
+    @media only screen and (max-device-width: 600px)  {
         /* celulares */
             display: flex;
             flex-direction: column;
@@ -157,7 +161,8 @@ export const TextIlSobreMim = styled.li`
             border-bottom: none;
             padding-top: 10px;
             padding-bottom: 0;
-            font-size: 1em;   
+            font-size: 1em;  
+            margin-left: 5em;
    };
    
     
@@ -193,24 +198,24 @@ export const HamburgeContaine1 = styled.div`
             width: 2rem;
             height: 0.2rem;
             
-            background: ${({ ativadoRes2 }) =>
-            ativadoRes2 ? '#e5e5e5' : '#e5e5e5'};
+            background: ${({ ativadores2 }) =>
+            ativadores2 ? props => props.theme.corHoverTextClaro : props => props.theme.corHoverTextClaro};
             border-radius: 10px;
             transition: all 0.3s linear;
             position: relative;
             transform-origin: 1px;
 
             :first-child {
-            transform: ${({ ativadoRes2 }) => ( ativadoRes2? "rotate(45deg)" : "rotate(0)")};
+            transform: ${({ ativadores2 }) => ( ativadores2? "rotate(45deg)" : "rotate(0)")};
             }
 
             :nth-child(2) {
-            opacity: ${({  ativadoRes2 }) => ( ativadoRes2 ? "0" : "1")};
-            transform: ${({  ativadoRes2 }) => ( ativadoRes2 ? "translateX(20px)" : "translateX(0)")};
+            opacity: ${({  ativadores2 }) => ( ativadores2 ? "0" : "1")};
+            transform: ${({  ativadores2 }) => ( ativadores2 ? "translateX(20px)" : "translateX(0)")};
             }
 
             :nth-child(3) {
-            transform: ${({  ativadoRes2}) => ( ativadoRes2? "rotate(-45deg)" : "rotate(0)")};
+            transform: ${({  ativadores2}) => ( ativadores2 ? "rotate(-45deg)" : "rotate(0)")};
             }
 
             }
@@ -239,24 +244,24 @@ export const HamburgeContaine1 = styled.div`
             
             width: 2rem;
             height: 0.2rem;
-            background: ${({ ativadoRes2 }) =>
-            ativadoRes2 ? '#e5e5e5' : '#e5e5e5'};
+            background: ${({ ativadores2 }) =>
+            ativadores2 ? '#e5e5e5' : '#e5e5e5'};
             border-radius: 10px;
             transition: all 0.3s linear;
             position: relative;
             transform-origin: 1px;
 
             :first-child {
-            transform: ${({ ativadoRes2 }) => ( ativadoRes2? "rotate(45deg)" : "rotate(0)")};
+            transform: ${({ ativadores2 }) => ( ativadores2? "rotate(45deg)" : "rotate(0)")};
             }
 
             :nth-child(2) {
-            opacity: ${({  ativadoRes2 }) => ( ativadoRes2 ? "0" : "1")};
-            transform: ${({  ativadoRes2 }) => ( ativadoRes2 ? "translateX(20px)" : "translateX(0)")};
+            opacity: ${({  ativadores2 }) => ( ativadores2 ? "0" : "1")};
+            transform: ${({  ativadores2 }) => ( ativadores2 ? "translateX(20px)" : "translateX(0)")};
             }
 
             :nth-child(3) {
-            transform: ${({  ativadoRes2}) => ( ativadoRes2? "rotate(-45deg)" : "rotate(0)")};
+            transform: ${({  ativadores2}) => ( ativadores2 ? "rotate(-45deg)" : "rotate(0)")};
             }
 
             }

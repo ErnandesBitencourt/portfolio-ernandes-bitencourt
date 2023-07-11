@@ -13,24 +13,6 @@ export  const  ContainerMainSkill = styled.main`
     height: 100%;
     row-gap: 10px;
     
-    @media screen and (min-device-width : 100px) and (max-device-width : 480px) {
-    /* celulares */
-        
-        width: 85%;
-        display: flex;
-        flex-direction: column;
-        row-gap: 5px;
-        padding-bottom: 20px;
-        row-gap: 50px;
-    }
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-        /* tablets */
-      
-        width: 85%;
-        display: flex;
-        flex-direction: column;
-    };
-
 
 
 `;
@@ -43,6 +25,13 @@ export const ContainerDivSkill = styled.div`
     justify-content: left;
     align-items: center;
 
+    @media screen and (max-device-width : 600px) {
+    /* celulares */
+    justify-content: center;
+        
+    };
+   
+
 `;
 
 export const TextHSkill = styled.h2`
@@ -53,16 +42,7 @@ export const TextHSkill = styled.h2`
     background-repeat: no-repeat;
     background-size: 7% 100% ;
 
-    @media screen and (min-device-width :100px) and (max-device-width : 480px) {
-    /* celulares */
-       font-size: 1.2em;
-    };
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
-        /* tablets */
-      font-size: 1.3em;
-    };
-
-`
+`;
 export const ContainerGeralFrontEnd = styled.div`
     
     display: flex;
@@ -71,6 +51,17 @@ export const ContainerGeralFrontEnd = styled.div`
     width: 100%;
     min-width: ${props => props.theme.minWidth};
     height: 100%;
+    
+       @media screen and (max-device-width : 600px) {
+    /* celulares */
+        
+        margin-top: 2em;
+        
+    };
+    @media screen and (max-device-width : 1000px) {
+        margin-top: 3em;
+    };
+
      
 `;
 
@@ -84,11 +75,11 @@ export const ContainerDivImgHabilidades = styled.div`
     min-width:30%;
     height: 100%;
     
-    @media screen and (min-device-width :100px) and (max-device-width : 480px) {
+    @media screen and (max-device-width : 600px) {
     /* celulares */
        display: none;
     };
-    @media screen and (min-device-width : 481px) and (max-device-width : 999px) {
+    @media screen and  (max-device-width : 1000px) {
         /* tablets */
       display: none;
     };
@@ -105,13 +96,24 @@ export const ContainerCards = styled.div`
    
     justify-content: space-evenly;
     align-items: center;
-    width: 75%;
-    min-width: 350px;
+    width: 60%;
+    min-width: ${props => props.theme.minWidth};
     height: 100%;
     max-height: 100%;
     flex-wrap: wrap;
     box-sizing: border-box;
     gap: 0.1em;
+    @media screen and (max-device-width : 600px) {
+    /* celulares */
+        
+        width: 100%;
+        gap: 0.2em;
+       
+    };
+    @media screen and (max-device-width : 1000px) {
+        width: 90%;
+    };
+
    
     
 `;
@@ -132,17 +134,23 @@ export const Cards = styled.div`
     padding-bottom: 5px;
     align-items: center;
     box-sizing: border-box;
-    flex: 1 1 25%;
+    flex: 2 2 25%;
     border: solid 3px ${props => props.theme.corPrincipal};
     border-radius:10px;
     img{
-        width: 50%;
-        max-width: 50%;
-        height: 50%;
+        width: 55%;
+        max-width: 55%;
+        height: 55%;
         filter: drop-shadow(-5px 5px 6px ${props => props.theme.corSecundaria});
-    }
-
   
+    @media screen and (max-device-width : 600px) {
+   
+        width: 70%;
+        max-width: 70%;
+        height: 50%;
+        
+    };
+    }
 
         :hover{        
             p{
@@ -154,6 +162,17 @@ export const Cards = styled.div`
             }
             
         };
+
+   
+    @media screen and (max-device-width : 1000px) {
+    /* celulares */
+        max-width: 30%;
+        flex: 1 1 30%;
+        padding-top:2px ;
+        padding-bottom: 2px;
+        
+    };
+   
         
 
 

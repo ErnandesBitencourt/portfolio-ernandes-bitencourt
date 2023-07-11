@@ -1,7 +1,7 @@
 import React from "react";
 
 import {Container,LogoPretoImg} from "./StyledLogoPreto"
-import GifLogo2 from "../../img/imgLogos/GifLogo2.gif"
+import teladecarregamento from "../../img/imgLogos/teladecarregamento.gif"
 
  const TelaDecarregamento = () => {
 
@@ -9,7 +9,7 @@ import GifLogo2 from "../../img/imgLogos/GifLogo2.gif"
     return (
     
         <Container>
-            <LogoPretoImg src={GifLogo2} alt="Tela de carregamento"/>
+            <LogoPretoImg src={teladecarregamento} alt="Tela de carregamento"/>
          
         </Container>
     )

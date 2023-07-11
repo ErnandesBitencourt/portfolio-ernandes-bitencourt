@@ -8,7 +8,7 @@ import { TextoSobreMin } from "../../endpoints/TextoSobreMin";
 export const SobreMim = () => {
 
     return(
-        <ContainerMainSobreMim className="headline" >
+        <ContainerMainSobreMim >
 
              <ContainerDivSobreMim >
                  <TextHSobreMim  >Sobre mim.</TextHSobreMim>

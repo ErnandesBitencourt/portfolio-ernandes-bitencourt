@@ -17,6 +17,13 @@ export const ContainerDivH3Contatos = styled.div`
     justify-content: left;
     align-items: center; 
     border: none;
+        @media screen and (max-device-width : 600px) {
+    /* celulares */
+        
+        justify-content: center;
+        
+    };
+  
 `;
 export const TextH2Contatos = styled.h2`
      font-size: ${props => props.theme.titulos};
@@ -34,6 +41,15 @@ export const ContainerIcons =styled.div`
     align-items: center;
     gap: 20px;
     animation: float 5s ease-in-out infinite;
+        @media screen and (max-device-width : 600px) {
+    /* celulares */
+        
+        margin-top: 3em;
+        
+    };
+    @media screen and (max-device-width : 1000px) {
+        margin-top: 4em;
+    };
    
 
 @keyframes float  {
