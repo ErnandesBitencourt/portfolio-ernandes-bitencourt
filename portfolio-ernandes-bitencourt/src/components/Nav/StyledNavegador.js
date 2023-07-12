@@ -111,6 +111,8 @@ export const UlNavHeader = styled.ul`
             /* celulares */
 
         align-items:  center;
+        padding-top: 0;
+        box-sizing: border-box;
        
     }
    
