@@ -77,7 +77,7 @@ export const UlNavHeader = styled.ul`
             /* celulares */
         display: ${({ativadores})=> ativadores ? 'flex' :'none'};
         max-width: 100%;
-        min-height: 100ch;
+        min-height: 100vh;
         gap: 30px;
         flex-direction: column;
         justify-content: center;
@@ -87,6 +87,8 @@ export const UlNavHeader = styled.ul`
         top: 0;
         right: 0;
         background-color: ${props => props.theme.corFundo};
+        align-items:  center;
+        box-sizing: border-box;
         
         
     }
@@ -113,6 +115,7 @@ export const UlNavHeader = styled.ul`
         align-items:  center;
         padding-top: 0;
         box-sizing: border-box;
+        height: 100vh;
        
     }
    
