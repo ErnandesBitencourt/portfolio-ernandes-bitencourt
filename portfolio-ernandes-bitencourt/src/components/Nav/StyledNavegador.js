@@ -104,6 +104,7 @@ export const UlNavHeader = styled.ul`
         top: 0;
         right: 0;
         box-sizing: border-box;
+        padding-top: 3em;
     }
    
     @media only screen and (max-device-width: 600px) {
@@ -113,6 +114,65 @@ export const UlNavHeader = styled.ul`
        
     }
    
+`;
+export const ButtonCurriculo = styled.button`
+    width: 10rem;
+    height: 2rem;
+    padding: 1.4rem;
+    border-radius: 10px;
+    box-sizing:border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: ${props => props.theme.corSecundaria};
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color:  ${props => props.theme.corTexto};
+    p{
+    background-image: linear-gradient(transparent 0%,transparent 90% , ${props => props.theme.corFundo}, ${props => props.theme.corFundo});
+    background-repeat: no-repeat;
+    background-size: 15% 100% ;
+    background-position-x: left;
+    transition: background-size 300ms; 
+    }
+    img{
+        width: 20px;
+        height: 20px;
+    }
+
+    :hover{
+        color: ${props => props.theme.corHoverTextClaro};
+
+        p{
+            background-size: 100% 100%;
+            background-position-x: left;
+            background-image: linear-gradient(transparent 0%,transparent 90% , ${props => props.theme.corFundo}, ${props => props.theme.corFundo});
+            transition: 0.5s;
+        }
+        
+        
+    };
+
+    @media only screen and (max-device-width: 1000px)  {
+            /* tablets */
+            width: 25%;
+            font-size: 0.8em;
+            margin-right: 5em;
+
+    };
+
+    @media only screen and (max-device-width: 600px)  {
+        /* celulares */
+             font-size: 1em;  
+            margin-left: 5em;
+            width: 30%;
+            max-width: 30%;
+            min-width: 20%;
+            justify-content: space-around;
+   };
+
 `;
 export const TextIlSobreMim = styled.li`
 
@@ -271,3 +331,4 @@ export const HamburgeContaine1 = styled.div`
 
 
 `
+

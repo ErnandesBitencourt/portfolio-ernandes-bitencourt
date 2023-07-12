@@ -1,5 +1,7 @@
 
-export const goToHomepage = (navigate) =>{
-    navigate("/")
+export const goTovoltar = (navigate) =>{
+    navigate(-1)
 };
+
+
 

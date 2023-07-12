@@ -3,6 +3,7 @@ import { HomePage } from "../home/HomePage";
 import { BrowserRouter, Routes , Route } from "react-router-dom";
 import GlobalStyle from "../styles/global";
 
+
 export const Router = () =>{
 
     return (

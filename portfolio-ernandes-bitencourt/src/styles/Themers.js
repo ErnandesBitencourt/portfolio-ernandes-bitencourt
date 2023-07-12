@@ -16,5 +16,6 @@ export const Colors =  {
     minWidthResponsive: "600px",
     minWidthResponsivet: "50px",
     minWidthResponsiveC: "20px",
-    titulos: "1.3rem"
+    titulos: "1.3rem",
+    corFundoCurriculo : "#EFEAEA"
 }
