@@ -68,7 +68,7 @@ export const UlNavHeader = styled.ul`
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 55%;
+    max-width: 70%;
     min-width:300px;
     height:100%;
     box-sizing: border-box;
@@ -157,7 +157,7 @@ export const ButtonCurriculo = styled.button`
 
     @media only screen and (max-device-width: 1000px)  {
             /* tablets */
-            width: 25%;
+            
             font-size: 0.8em;
             margin-right: 5em;
 
@@ -167,8 +167,8 @@ export const ButtonCurriculo = styled.button`
         /* celulares */
              font-size: 1em;  
             margin-left: 5em;
-            width: 30%;
-            max-width: 30%;
+            width: 60%;
+            max-width: 50%;
             min-width: 20%;
             justify-content: space-around;
    };
