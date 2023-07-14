@@ -49,6 +49,11 @@ export const ContainerDivTextPSobreMin = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center; 
+    @media screen and (max-device-width : 600px) {
+        margin-top:3em;
+        
+        
+    };
 `;
 export const TextSobreMimDiv = styled.div`
        width:60%;

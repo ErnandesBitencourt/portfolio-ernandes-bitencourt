@@ -77,7 +77,8 @@ export const UlNavHeader = styled.ul`
             /* celulares */
         display: ${({ativadores})=> ativadores ? 'flex' :'none'};
         max-width: 100%;
-        min-height: 100vh;
+        min-height: 100vhls
+        ;
         gap: 30px;
         flex-direction: column;
         justify-content: center;

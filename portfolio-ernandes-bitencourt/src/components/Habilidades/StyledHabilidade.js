@@ -143,13 +143,14 @@ export const Cards = styled.div`
         height: 55%;
         filter: drop-shadow(-5px 5px 6px ${props => props.theme.corSecundaria});
   
-    @media screen and (max-device-width : 600px) {
-   
-        width: 70%;
-        max-width: 70%;
-        height: 50%;
+            @media screen and (max-device-width : 600px) {
         
-    };
+                width: 70%;
+                max-width: 68%;
+                height: 55%;
+                
+                
+            };
     }
 
         :hover{        
@@ -165,14 +166,20 @@ export const Cards = styled.div`
 
    
     @media screen and (max-device-width : 1000px) {
-    /* celulares */
+    
         max-width: 30%;
         flex: 1 1 30%;
         padding-top:2px ;
         padding-bottom: 2px;
-        
+        border: none;
+       
     };
-   
+    @media screen and (max-device-width : 600px) {
+    /* celulares */
+        
+        border: none;
+        row-gap: 1.2em;
+    };
         
 
 
@@ -188,5 +195,11 @@ export const TextCardsP = styled.p`
     background-size: 15% 100% ;
     background-position-x: left;
     transition: background-size 300ms;
+    @media screen and (max-device-width : 600px) {
+    /* celulares */
+        
+        font-size: 0.7em;
+    };
+        
    
 `;
